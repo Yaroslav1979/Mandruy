@@ -1,0 +1,13 @@
+ <div class="card">    
+      <div class="nav">
+      {{#each navigation.links}}
+        <div class="nav-item">
+          {{#if href}}
+          <a href="{{href}}" class="nav-link">{{text}}</a>
+          {{else}}
+          <a href="{{href}}" class="nav-link disabled">{{text}}</a>
+          {{/if}}
+        </div>
+      {{/each}}      
+      </div>    
+  </div>

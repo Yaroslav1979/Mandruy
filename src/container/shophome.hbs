@@ -1,0 +1,91 @@
+<main>  
+   
+  <div class="m-2">
+    {{#with newsBlock}}
+      <h1 class="text-center">{{title}}</h1>
+
+      <div class="row g-1">
+      {{#each cards}}
+      <div class="card col-3">        
+        <div class='card-body text-bg-dark'>
+          
+            <div class="card-header ">
+             <h6 >{{title}} </h6>
+
+            {{#if isTop}}
+              <span class="badge m-1">
+              <span class="rounded-pill text-bg-success px-2 py-1"> Top </span>
+              </span>
+              
+            {{/if}}
+            {{#if isNew}}
+              <span class="badge m-1"> 
+              <span class="rounded-pill text-bg-danger px-2 py-1" > New </span>
+              </span> 
+             
+              {{/if}}  
+            </div>
+            <p>{{description}} </p>
+          </div>       
+        </div>
+       {{/each}}
+      </div>
+    {{/with}}
+  </div>
+  <br><hr> 
+
+  <div>
+    {{#with goodsBlock}}
+
+      <div class="nav">
+      {{#each tabs}} 
+
+        {{#if isActive}}        
+        <div class="nav-tabs"> 
+          <a href="{{href}}" class="nav-link active m-2">{{text}}</a>
+        </div>       
+        
+        {{else}}
+          {{#if isDisabled}}
+           <div class="nav-tabs">  
+            <a href="{{href}}" class="nav-link disabled m-2">{{text}}</a>
+           </div>
+           
+           {{else}}
+          <div class="nav-tabs"> 
+            <a href="{{href}}" class="nav-link m-2">{{text}}</a>
+          </div>
+          {{/if}}                
+        {{/if}} 
+      {{/each}}
+      </div>
+            
+      {{>shopcard}}
+     
+    {{/with}}
+  </div> 
+
+  <br><hr>
+
+  <div>
+    <br>
+    <div class='card row'>
+        <div class='card-body text-bg-dark'>
+        {{#with subscribe}}
+         <h2>{{header}} </h2>
+         <p>{{description}} </p>      
+          {{#each buttons}}           
+           <a href={{link}} class="list-item" target="_blank">
+                <button class="btn btn-primary m-2">{{text}}</button> <br> 
+            </a>            
+          {{/each}} 
+    {{/with}}
+    </div>
+    </div>
+  </div>
+<br><hr> <br>
+
+{{> shopaction}}
+
+<br><hr>
+</main>
