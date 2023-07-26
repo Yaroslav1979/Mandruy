@@ -1219,11 +1219,11 @@ router.get('/shopproduct', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-1', function (req, res) {
+router.get('/mandruy', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-1', {
+  res.render('mandruy', {
   layout: 'mandruy',
   page: {
     header: {
@@ -1252,23 +1252,52 @@ router.get('/template-1', function (req, res) {
     ],
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
-    hero: [
+
+    priority: [
       {
-      photo: 'https://picsum.photos/500/500',
+      picture: 'https://picsum.photos/150/150',
       name: 'Lorem Ipsum',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
     },
     {
-      photo: 'https://picsum.photos/500/500',
+      picture: 'https://picsum.photos/150/150',
       name: 'Lorem Ipsum',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
     },
     {
-      photo: 'https://picsum.photos/500/500',
+      picture: 'https://picsum.photos/150/150',
       name: 'Lorem Ipsum',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
     },
     ],
+
+    places: {
+      searchFild: 'Пошук',
+      label: "Шукати туристичні місця",
+      placeyolder: "Ввведіть назву місця",
+
+      place: [
+        {
+        photo: "https://picsum.photos/400/400",
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        },
+
+        {
+          photo: "https://picsum.photos/400/400",
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+          },
+
+          {
+            photo: "https://picsum.photos/400/400",
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+            },
+
+            {
+              photo: "https://picsum.photos/400/400",
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+              },
+      ],
+    },
 
     footer: {
         logoPicture: 'img-svg',
