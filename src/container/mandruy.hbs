@@ -6,7 +6,6 @@
             
         <strong class="col-2">{{logotype}} </strong>
 
-
         {{#each navigation}}
            
             <a href={{url}} target="_blank" class="btn btn-link col-2">{{text}} </a>
@@ -26,21 +25,77 @@
         <div class="prior">
             <img src="{{picture}}" alt="picture">
             <div class="prior-cont">
-                <h2 class="name">{{name}} </h2>
+                <h2 class="slogan">{{slogan}} </h2>
                 <p class="descr">{{description}}</p>
             </div>
         </div>
     {{/each}}
 
     {{#with places}}
-        <label for="">{{label}} </label>
-        <input type="{{searchFild}}", placeholder="{{placeyolder}}">
+        <div class="form-search">
+        {{#with form}}
+            <label for="">{{label}} </label>
+            <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}">
+    {{!-- <input type="{{searchFild}}" id="form-input-{{id}}" placeholder="{{placeholder}}" name="{{name}}"
+        class="form-input"> --}}
+            <button>{{buttonSearch}} </button>
+            <button>{{buttonFiltr}} </button>
+        {{/with}}
+        </div>
+
+        <div class="place-list">
 
         {{#each place}}
             <img src="{{photo}}" alt="photo">
-            <p class="place-descr">{{ description}} </p>
+            <p class="place-descr">{{descriptionPlace}} </p>
+            
         {{/each}}
+        </div>
     {{/with}}
+
+    <section class="add-place">
+        {{#with addPlace}}
+            <h2 class="add-title">{{addTitle}} </h2>
+            <img src="{{addPhoto}}" alt="add your photo">
+            <input type="text" placeholder="{{addPlaceholder}}">
+                {{#each addFiltr}}
+                <div class="category">
+                <input type="text" placeholder="{{this}}" class="each-cat">
+                </div>
+                {{/each}}
+            <input type="text" class="add-coord" placeholder="{{addCoordination}}">
+            <input type="text" class="add-descr" placeholder="{{addDescription}}"> 
+
+            {{#with addButtons}}
+                <button>{{del}} </button>
+                <button>{{redact}} </button>
+                <button>{{add}} </button>
+            {{/with}}
+        {{/with}}
+    </section>
+     <div class="founders">
+
+        {{#each founders}}
+            <img src="{{personPhoto}}" alt="photo">
+            <h3 class="faunder-name">{{name}} </h3>
+            <p class="place-descr">{{about}} </p>
+            
+        {{/each}}
+    </div>
+
+    <footer class="footer">
+        {{#with footer}}
+            <div class="logo">
+                <img src="" alt="{{projectLogo}}">
+            </div>
+            <h4 class="project">{{projectTitle}} </h4>
+            <p class="descr-project">{{projectDescription}}  </p>
+            {{#each socialLinks}}
+                <a href="{{href}}" >{{link}} </a>
+            {{/each}}
+        {{/with}}
+    </footer>
+
 
     {{/with}}   
 
