@@ -66,19 +66,23 @@ router.get('/mandruy', function (req, res) {
 
       navigation: [
       {
-        text: 'text',
+        text: 'Про сервіс',
         url: 'https://example.com/home',
       },
       {
-        text: 'text',
+        text: 'Пошук місць',
         url: 'https://example.com/about',
       },
       {
-        text: 'text',
+        text: 'Запропонувати місце',
         url: 'https://example.com/services',
       },
       {
-        text: 'text',
+        text: 'Контакти',
+        url: 'https://example.com/services',
+      },
+      {
+        text: 'Про нас',
         url: 'https://example.com/services',
       },
     ],

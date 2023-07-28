@@ -3,36 +3,27 @@
     {{#with page}}
     <div class="header">
         {{#with header}}
-            
+        <div class="top-content">    
         <strong class="col-2">{{logotype}} </strong>
-
-        {{#each navigation}}
-           
-            <a href={{url}} target="_blank" class="btn btn-link col-2">{{text}} </a>
-                               
-        {{/each}}
+            <span>
+            {{#each navigation}}           
+            <a href={{url}} target="_blank" class="nav-content">{{text}} </a>
+            {{/each}}
+            </span>
 
         {{#each icon}}
         {{.}}
         {{/each}}
+        </div>
 
         <h1 class="hero">{{title}} </h1>
 
         {{/with}} 
     </div>
-
-    {{#each priority}}
-        <div class="prior">
-            <img src="{{picture}}" alt="picture">
-            <div class="prior-cont">
-                <h2 class="slogan">{{slogan}} </h2>
-                <p class="descr">{{description}}</p>
-            </div>
-        </div>
-    {{/each}}
-
+   
+<div class="form-search">
     {{#with places}}
-        <div class="form-search">
+        
         {{#with form}}
             <label for="">{{label}} </label>
             <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}">
@@ -49,9 +40,19 @@
             <img src="{{photo}}" alt="photo">
             <p class="place-descr">{{descriptionPlace}} </p>
             
-        {{/each}}
-        </div>
+        {{/each}}       
     {{/with}}
+</div>
+
+     {{#each priority}}
+        <div class="prior">
+            <img src="{{picture}}" alt="picture">
+            <div class="prior-cont">
+                <h2 class="slogan">{{slogan}} </h2>
+                <p class="descr">{{description}}</p>
+            </div>
+        </div>
+    {{/each}}
 
     <section class="add-place">
         {{#with addPlace}}

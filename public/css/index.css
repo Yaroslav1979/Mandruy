@@ -1,10 +1,12 @@
-/* html {
+ /* html {
   max-width: 1920px;
-}
+} */
 
 body {
   margin: 0px;
   background: #fff;
+  max-width: 1920px;
+  font-family: e-Ukraine;
 }
 
 main,
@@ -15,14 +17,46 @@ nav {
 }
 
 section {
-  /* padding: 16px; }*/
+  padding: 16px; }
 
+/* ---------- header ------------------- */
 
 .header {
-background: url(https://picsum.photos/1920/600);
+display: flex;
+flex-direction: column;
+align-content: center;
+gap: 200px;
+background: url(/img/Ватра.jpg);
 width: 100%;
-height: 600px;
+height: 500px;
 }
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 0 50px;
+}
+.top-content > span {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+  .nav-content {
+  color: #FFF;
+text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+font-family: e-Ukraine, sans-serif;
+text-decoration: none;
+}
+
+.nav-content:hover {
+  color: bisque;
+}
+
+
 
 .prior {
   margin: 50px 410px;
