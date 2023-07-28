@@ -87,24 +87,24 @@ router.get('/mandruy', function (req, res) {
       },
     ],
     icon: [
-      'svg1', 'svg2',
+      'UK', 'EN',
     ],
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
 
     priority: [
       {
-      picture: 'https://picsum.photos/150/150',
+      picture: '/svg/Group 14.svg',
       slogan: 'Lorem Ipsum',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
     },
     {
-      picture: 'https://picsum.photos/150/150',
+      picture: '/svg/Group 15.svg',
       slogan: 'Lorem Ipsum',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
     },
     {
-      picture: 'https://picsum.photos/150/150',
+      picture: '/svg/Group 16.svg',
       slogan: 'Lorem Ipsum',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
     },
@@ -122,7 +122,12 @@ router.get('/mandruy', function (req, res) {
       place: [
         {
         photo: "https://picsum.photos/500/400",
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        },
+
+        {
+        photo: "https://picsum.photos/500/400",
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
         },
 
         {
@@ -134,7 +139,11 @@ router.get('/mandruy', function (req, res) {
         photo: "https://picsum.photos/500/400",
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
         },
-
+        {
+        photo: "https://picsum.photos/500/400",
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        },
+  
         {
         photo: "https://picsum.photos/500/400",
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'

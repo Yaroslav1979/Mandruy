@@ -10,10 +10,11 @@
             <a href={{url}} target="_blank" class="nav-content">{{text}} </a>
             {{/each}}
             </span>
-
-        {{#each icon}}
-        {{.}}
-        {{/each}}
+            <div class="srv-btn">
+                {{#each icon}}
+                <button> {{.}}</button>
+                {{/each}}
+            </div>
         </div>
 
         <h1 class="hero">{{title}} </h1>
@@ -21,38 +22,47 @@
         {{/with}} 
     </div>
    
-<div class="form-search">
+<div class="form">
     {{#with places}}
-        
+        <div class="form-search">
         {{#with form}}
-            <label for="">{{label}} </label>
-            <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}">
+        <div>
+            <label for="serch" >{{label}} </label>
+            <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}" name="serch">
+        </div>
     {{!-- <input type="{{searchFild}}" id="form-input-{{id}}" placeholder="{{placeholder}}" name="{{name}}"
         class="form-input"> --}}
-            <button>{{buttonSearch}} </button>
-            <button>{{buttonFiltr}} </button>
+            <button class="butn">{{buttonSearch}} </button>
+            <button class="butn">{{buttonFiltr}} </button>
         {{/with}}
         </div>
 
         <div class="place-list">
 
         {{#each place}}
-            <img src="{{photo}}" alt="photo">
-            <p class="place-descr">{{descriptionPlace}} </p>
-            
+            <div>
+            <img src="{{photo}}" alt="photo" class="place-img">
+                <div class="place-item">
+                <p class="place-descr">{{descriptionPlace}} </p>
+                <p><button> Ще фото </button></p>
+                </div>
+            </div>
         {{/each}}       
-    {{/with}}
+        {{/with}}
+        </div>
 </div>
 
+    <div class="prior">
      {{#each priority}}
-        <div class="prior">
+        <div>        
             <img src="{{picture}}" alt="picture">
             <div class="prior-cont">
                 <h2 class="slogan">{{slogan}} </h2>
                 <p class="descr">{{description}}</p>
-            </div>
-        </div>
+            </div> 
+        </div>       
     {{/each}}
+    </div>
 
     <section class="add-place">
         {{#with addPlace}}
