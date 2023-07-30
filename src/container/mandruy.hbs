@@ -1,14 +1,14 @@
 <main>    
-   <div class="col-12"> 
+   
     {{#with page}}
     <div class="header">
         {{#with header}}
         <div class="top-content">    
-        <strong class="col-2">{{logotype}} </strong>
+            <strong class="logo">{{logotype}} </strong>
             <span>
-            {{#each navigation}}           
-            <a href={{url}} target="_blank" class="nav-content">{{text}} </a>
-            {{/each}}
+                {{#each navigation}}           
+                <a href={{url}} target="_blank" class="nav-content">{{text}} </a>
+                {{/each}}
             </span>
             <div class="srv-btn">
                 {{#each icon}}
@@ -21,69 +21,93 @@
 
         {{/with}} 
     </div>
+
+
+    {{#with about}}
+    <div class="about">
+        <h2 class="about-title">{{title}} </h2>
+        <div class="about-cont">
+            {{#each content}}        
+            <div class="about-items">
+                <img class="about-img" src="{{picture}}" alt="picture">
+                <h2 class="about-slogan">{{slogan}} </h2>
+                <p class="about-descr">{{description}}</p>
+            </div>                 
+        {{/each}}
+        </div> 
+    </div>
+    {{/with}}
    
-<div class="form">
+
+
+    <div class="form">
     {{#with places}}
-        <div class="form-search">
-        {{#with form}}
-        <div>
-            <label for="serch" >{{label}} </label>
-            <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}" name="serch">
-        </div>
-    {{!-- <input type="{{searchFild}}" id="form-input-{{id}}" placeholder="{{placeholder}}" name="{{name}}"
-        class="form-input"> --}}
-            <button class="butn">{{buttonSearch}} </button>
-            <button class="butn">{{buttonFiltr}} </button>
+        <h2>{{title}}</h2>
+    {{!-- ------------------------------------- --}}
+            <div class="form-search">
+            {{#with form}}
+                <div>
+                    <label for="serch" >{{label}} </label>
+                    <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}" name="serch">
+                </div>
+                <button class="butn">{{buttonSearch}} </button>
+                <button class="butn">{{buttonFiltr}} </button>
+            {{/with}}
+            </div>
+    {{!-- -----------------------------------------}}
+            <div class="place-list">
+                {{#each place}}
+                    <div class="place-item">
+                        <img src="{{photo}}" alt="photo" class="place-img">                    
+                    
+                        <div class="place-text">
+                            <p class="place-descr">{{descriptionPlace}} </p>
+                            <button class="place-btn"> Ще фото </button>
+                        </div>
+                    </div>        
+                {{/each}} 
+            </div>
+
+{{!-- --------------------------------------------- --}}
         {{/with}}
-        </div>
+    </div>
+    
 
-        <div class="place-list">
 
-        {{#each place}}
-            <div>
-            <img src="{{photo}}" alt="photo" class="place-img">
-                <div class="place-item">
-                <p class="place-descr">{{descriptionPlace}} </p>
-                <p><button> Ще фото </button></p>
+    <div class="add-place">
+        {{#with addPlace}}
+
+            <h2 class="add-title">{{addTitle}} </h2>
+            
+            <div class="add-block">
+                <div class="add-part-blok">
+                <img src="{{addPhoto}}" alt="add your photo">
+                    <div class="add-form">
+                    <input type="text" placeholder="{{addPlaceholder}}">
+                        {{#each addFiltr}}
+                        <div class="category">
+                            <input class="each-ctg" type="text" placeholder="{{this}}" >
+                        </div>
+                        {{/each}}                
+                    <input type="text" class="add-coord" placeholder="{{addCoordination}}">
+                    </div>
                 </div>
             </div>
-        {{/each}}       
-        {{/with}}
-        </div>
-</div>
 
-    <div class="prior">
-     {{#each priority}}
-        <div>        
-            <img src="{{picture}}" alt="picture">
-            <div class="prior-cont">
-                <h2 class="slogan">{{slogan}} </h2>
-                <p class="descr">{{description}}</p>
-            </div> 
-        </div>       
-    {{/each}}
-    </div>
-
-    <section class="add-place">
-        {{#with addPlace}}
-            <h2 class="add-title">{{addTitle}} </h2>
-            <img src="{{addPhoto}}" alt="add your photo">
-            <input type="text" placeholder="{{addPlaceholder}}">
-                {{#each addFiltr}}
-                <div class="category">
-                <input type="text" placeholder="{{this}}" class="each-cat">
-                </div>
-                {{/each}}
-            <input type="text" class="add-coord" placeholder="{{addCoordination}}">
             <input type="text" class="add-descr" placeholder="{{addDescription}}"> 
-
+            
+            <div>
             {{#with addButtons}}
                 <button>{{del}} </button>
                 <button>{{redact}} </button>
                 <button>{{add}} </button>
             {{/with}}
+            </div>
+
         {{/with}}
-    </section>
+    </div>
+
+
      <div class="founders">
 
         {{#each founders}}
@@ -110,5 +134,5 @@
 
     {{/with}}   
 
-    </div>
+   
 </main>

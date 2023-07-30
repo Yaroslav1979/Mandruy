@@ -92,25 +92,30 @@ router.get('/mandruy', function (req, res) {
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
 
-    priority: [
-      {
+    about: {
+      title: 'ПРО СЕРВІС',     
+    
+    content: [
+      {        
       picture: '/svg/Group 14.svg',
       slogan: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque.',
     },
     {
       picture: '/svg/Group 15.svg',
       slogan: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque.',
     },
     {
       picture: '/svg/Group 16.svg',
       slogan: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
-    },
-    ],
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque.',
+    }
+    ]
+  },
 
     places: {
+      title: 'Lorem Ipsum',
       form: {
         searchFild: 'Пошук',
         label: "Шукати туристичні місця",
@@ -122,31 +127,31 @@ router.get('/mandruy', function (req, res) {
       place: [
         {
         photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet'
         },
 
         {
         photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet'
         },
 
         {
         photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet'
         },
 
         {
         photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet'
         },
         {
         photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet'
         },
   
         {
         photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        descriptionPlace: 'Lorem ipsum dolor sit amet'
         },
       ],
     },
