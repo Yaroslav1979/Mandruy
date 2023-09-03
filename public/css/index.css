@@ -25,27 +25,28 @@ section {
   display: flex;
   flex-direction: column;
   align-content: center;
-  gap: 200px;
-  background: url(/img/Ватра.jpg);
+  gap: 324px;
+  background: url(/img/synevir.png);
   width: 100%;
-  height: 500px;
+  height: 1080px;
 }
  
 .logo {
   display: flex;
   justify-content: center;    
   background-color: rgb(6, 150, 102);
-  color: #000;
+  color: white;
   font-size: 36px;
+  padding: 4px 16px;
   border: 1px solid black;
   border-radius: 10px;
 }
 
 .top-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px;
-  padding: 0 50px;
+  padding: 16px 50px;
 }
 
 .top-content>span {
@@ -56,12 +57,18 @@ section {
   .nav-content {
   color: #FFF;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   font-family: e-Ukraine, sans-serif;
-  text-decoration: none;  
+  text-decoration: none; 
+  padding: 16px 0; 
+  width: 140px;
+  height: 52px;
+  border-radius: 30px;
+  border: 1px solid #FAFAFA;
+  box-shadow: 0px 4px 99px 0px #454753;
 }
 
 .nav-content:hover {
@@ -84,18 +91,83 @@ section {
   opacity: 0.8;
 }
 
-.hero {
+.hero-block {
   display: inline-flex;
-  height: 100px;
+flex-direction: column;
+align-items: flex-start;
+font-family: e-Ukraine, sans-serif;
+font-style: normal;
+width: 35%;
+gap: 40px;
+margin: 0px 324px;
+color: #FFF;
+}
+
+.hero-title {
+  display: inline-flex; 
   justify-content: center;
-  flex-shrink: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: e-Ukraine, sans-serif;
-  font-size: 32px;
-  font-style: normal;
+  text-align: center;  
+  font-size: 32px;  
   font-weight: 700;
   line-height: 18px;
+}
+
+.hero-text {
+color: #FFF;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px; /* 166.667% */
+}
+
+.hero-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 72px;
+ 
+}
+
+.search { 
+  display: flex;
+padding: 14px 50px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 5px;
+background: #6B76FF;
+ color: #FFF;
+text-align: center;
+font-size: 18px;
+font-weight: 700;
+}
+
+.hero-btn > div {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.learn {
+
+/* width: 168px;
+height: 40px; */
+color: #FFF;
+text-align: center;
+font-size: 18px;
+font-weight: 700;
+}
+.icon {
+  display: flex;
+  position: absolute;
+ left: 110%;
+ top: 20%;
+  width: 12px;
+  height: 16px;
+  stroke-width: 2px;
+  stroke: #FFF;
+  
+
 }
 /* ---------------- about us ----------- */
 
@@ -109,8 +181,8 @@ section {
   width: 100%;
   height: 60%;
   flex-shrink: 0;
-  background: #F5F4FA;
-  padding: 50px 0;
+  background: #FFF;
+  padding: 100px 0;  
 }
 
 .about-cont {
@@ -159,6 +231,71 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+}
+/* --------------------Social---------------- */
+
+.social {
+  position: relative;
+  width: 1920px;
+  height: 528px;
+  top: 0px;
+  flex-shrink: 0;
+  background-image: url(/img/Rectangle.png);
+  padding: 160px 0;
+  margin: 50px 0;
+}
+
+.social-block {
+  position: absolute;
+  left: 800px;
+  width: 500px;
+}
+
+.social-title {
+  color: #FFF;
+  font-family: e-Ukraine;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.social-text {
+  color: #BCBCBC;
+  font-family: e-Ukraine;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  }
+
+
+
+
+/* .figure {
+  position: absolute;
+  width: 1920px;
+  top: 1680px;
+  height: 528px;
+  fill: #000;
+} */
+
+.picture {
+  position: absolute;  
+  top: -56px;
+  left: 400px;
+  width: 360px;
+  height: 667px;
+  transform: rotate(-2.001eg);
+  flex-shrink: 0;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  width:150px;
+  height: 150px;
 }
 
 /* ------------------ form search --------------- */

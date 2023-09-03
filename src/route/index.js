@@ -3,37 +3,8 @@ const express = require('express')
 // Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
 const router = express.Router()
 
-// ===========================================================
 
-var header = {
-  name: {
-    firstname: 'Ivan',
-    lastname: 'Ivanov',
-  },
 
-  position: 'Junior Fullstack JS Developer',
-  salary: '600$ в місяць',
-
-  address: '26, Soborna str, Rivne, Ukraine',
-}
-
-var footer = {
-  social: {
-    email: {
-      text: 'ivan@mail.com',
-      href: 'mailto:ivan@mail.com',
-    },
-    phone: {
-      text: '+380670000123',
-      href: 'tel:+380670000123',
-    },
-    LinkedIn: {
-      text: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/dmytro-test',
-    },
-  },
-  address: '26, Soborna str, Rivne, Ukraine',
-}
 
 // ================================================================
 
@@ -74,23 +45,32 @@ router.get('/mandruy', function (req, res) {
         url: 'https://example.com/about',
       },
       {
-        text: 'Запропонувати місце',
+        text: 'Додати місце',
         url: 'https://example.com/services',
       },
       {
         text: 'Контакти',
         url: 'https://example.com/services',
       },
-      {
-        text: 'Про нас',
-        url: 'https://example.com/services',
-      },
+      // {
+      //   text: 'Про нас',
+      //   url: 'https://example.com/services',
+      // },
     ],
-    icon: [
-      'UK', 'EN',
-    ],
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  },
+  
+    // icon: [
+    //   'UK', 'EN',
+    // ],
+    hero: {
+      title: 'Вітаємо вас на «Мандруй»',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cra',
+      buttons: {
+        serch: 'Розпочати пошук',
+        learn: 'Дізнатися більше'
+      }
+    } 
+  },  
+ 
 
     about: {
       title: 'ПРО СЕРВІС',     
@@ -98,24 +78,24 @@ router.get('/mandruy', function (req, res) {
     content: [
       {        
       picture: '/svg/Group 14.svg',
-      slogan: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque.',
+      slogan: 'Різноманіття',
+      description: 'В нашій базі можна знайти місця для таборів або недовготривалих мандрівок, визначні історичні пам’ятки, річки чи озера.',
     },
     {
       picture: '/svg/Group 15.svg',
-      slogan: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque.',
+      slogan: 'Сортування',
+      description: 'Усі місця чи пам’ятки відсортовані за категоріями. Ви можете легко знайти те, що вам потрібно, задавши певні параметри пошуку',
     },
     {
       picture: '/svg/Group 16.svg',
-      slogan: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque.',
+      slogan: 'Інтерактивна мапа',
+      description: 'Кожне місце також можна переглянути на Google Мапах, що додає зручності для прокладання маршрутів',
     }
     ]
   },
 
     places: {
-      title: 'Lorem Ipsum',
+      title: 'ПОШУК МІСЦЬ',
       form: {
         searchFild: 'Пошук',
         label: "Шукати туристичні місця",
@@ -208,7 +188,7 @@ router.get('/mandruy', function (req, res) {
         ],
       },
     },
-  })
+})
   //                  ↑↑ сюди вводимо JSON дані
 })
 
