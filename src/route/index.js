@@ -98,40 +98,40 @@ router.get('/mandruy', function (req, res) {
       title: 'ПОШУК МІСЦЬ',
       form: {
         searchFild: 'Пошук',
-        label: "Шукати туристичні місця",
+        // label: "Шукати туристичні місця",
         placeyolder: "Ввведіть назву місця",
-        buttonSearch: "Пошук",
-        buttonFiltr: "Критерії"
+        // buttonSearch: "Пошук",
+        // buttonFiltr: "Критерії"
       },
 
       place: [
         {
-        photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet'
+        photo: "/img/places/Bell.jpg",
+        descriptionPlace: 'Назва місця 1'
         },
 
         {
-        photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet'
+        photo: "/img/places/Church.jpg",
+        descriptionPlace: 'Назва місця 2'
         },
 
         {
-        photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet'
+        photo: "/img/places/Museum.jpg",
+        descriptionPlace: 'Назва місця 3'
         },
 
         {
-        photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet'
+        photo: "/img/places/RockPicture.jpg",
+        descriptionPlace: 'Назва місця 4'
         },
         {
-        photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet'
+        photo: "/img/places/Fortress.jpg",
+        descriptionPlace: 'Назва місця 5'
         },
   
         {
-        photo: "https://picsum.photos/500/400",
-        descriptionPlace: 'Lorem ipsum dolor sit amet'
+        photo: "/img/places/OldChurch.jpg",
+        descriptionPlace: 'Назва місця 6'
         },
       ],
     },

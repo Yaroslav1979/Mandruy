@@ -76,25 +76,40 @@
     {{#with places}}
         <h2>{{title}}</h2>
     {{!-- ------------------------------------- --}}
-            <div class="form-search">
+            <div >
             {{#with form}}
-                <div>
-                    <label for="serch" >{{label}} </label>
+                <div class="form-search">
+                    {{!-- <label for="serch" >{{label}} </label> --}}
                     <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}" name="serch">
+                    <img src="/png/iconSearch.png" alt="" class="search-icon">
+                    {{!-- <span class="search-icon" style="background-image: url('/svg/search.svg')"></spanstyle></span> --}}
                 </div>
-                <button class="butn">{{buttonSearch}} </button>
-                <button class="butn">{{buttonFiltr}} </button>
+                <div class="sort">
+                    <div class="sort-category">
+
+                    </div>
+                    <div class="sort-region">
+                        
+                    </div>
+                    <div class="sort-name">
+
+                    </div>
+
+
+                </div>
+                {{!-- <button class="butn">{{buttonSearch}} </button>
+                <button class="butn">{{buttonFiltr}} </button> --}}
             {{/with}}
             </div>
     {{!-- -----------------------------------------}}
             <div class="place-list">
                 {{#each place}}
                     <div class="place-item">
-                        <img src="{{photo}}" alt="photo" class="place-img">                    
+                        <img src="{{photo}}" alt="photo" class="place-img">                   
                     
                         <div class="place-text">
                             <p class="place-descr">{{descriptionPlace}} </p>
-                            <button class="place-btn"> Ще фото </button>
+                            {{!-- <button class="place-btn"> Ще фото </button> --}}
                         </div>
                     </div>        
                 {{/each}} 
@@ -104,8 +119,6 @@
         {{/with}}
     </div>
     
-
-
     <div class="add-place">
         {{#with addPlace}}
 
@@ -140,7 +153,7 @@
     </div>
 
 
-     <div class="founders">
+     {{!-- <div class="founders">
 
         {{#each founders}}
             <img src="{{personPhoto}}" alt="photo">
@@ -148,7 +161,7 @@
             <p class="place-descr">{{about}} </p>
             
         {{/each}}
-    </div>
+    </div> --}}
 
     <footer class="footer">
         {{#with footer}}
