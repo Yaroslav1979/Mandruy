@@ -109,7 +109,12 @@
                     {{#each filtr}}                    
                         <div class="filtr-category">
                             <p class="name-filtr">{{category}} </p>
-                            <input class="input-filtr" type="text" placeholder="{{placeyolder}}">
+                            <select class="input-filtr" name="{{placeyolder}}" id="">
+                                <option value="">
+                                        {{option}}
+                                </option>
+                            </select>
+                           
                         </div> 
                     {{/each}} 
                  </div>

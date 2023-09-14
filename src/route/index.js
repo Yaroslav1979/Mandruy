@@ -108,16 +108,16 @@ router.get('/mandruy', function (req, res) {
         filtr: [
           {
           category: 'Категорї:',
-          placeyolder: 'Обрати категорію',
+          option: 'Обрати категорію',
         },
         {
           category: 'Область:',
-          placeyolder: 'Обрати область',
+          option: 'Обрати область',
         },
         
         {
           category: 'Сортувати за:',
-          placeyolder: 'Назвою',
+          option: 'Назвою',
         },
       ]
 
