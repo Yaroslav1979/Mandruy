@@ -233,21 +233,27 @@ font-weight: 700;
   line-height: 18px;
 }
 /* --------------------Social---------------- */
-
+.social-cont {
+  display: flex;
+position: relative;
+}
 .social {
-  position: relative;
+  display: flex;
   width: 1920px;
-  height: 528px;
+  height: 460px;
   top: 0px;
   flex-shrink: 0;
-  background-image: url(/img/Rectangle.png);
-  padding: 160px 0;
-  margin: 50px 0;
+  background-color: #000;
+  transform: skewY(3deg);
+  /* background-image: url(/img/Rectangle.png); */
+
+  margin: 20px 0;
 }
 
 .social-block {
   position: absolute;
-  left: 800px;
+  left: 880px;
+  top: 160px;
   width: 500px;
 }
 
@@ -279,9 +285,19 @@ font-weight: 700;
   fill: #000;
 } */
 
+.picture:last-of-type {
+  position: absolute;  
+  top: -80px;
+  left: 388px;
+  width: 384px;
+  height: 667px;
+  transform: rotate(-2.001eg);
+  flex-shrink: 0;
+}
+
 .picture {
   position: absolute;  
-  top: -56px;
+  top: -68px;
   left: 400px;
   width: 360px;
   height: 667px;
@@ -308,7 +324,7 @@ font-weight: 700;
   align-items: center;
   gap: 20px;  
   flex-shrink: 0;  
-  padding: 50px 0;
+  padding: 160px 0;
 }
 
 .form-search {

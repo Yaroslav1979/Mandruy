@@ -99,7 +99,7 @@ router.get('/mandruy', function (req, res) {
       form: {
         searchFild: 'Пошук',
         // label: "Шукати туристичні місця",
-        placeyolder: "Ввведіть назву місця",
+        placeyolder: "Введіть назву місця",
         // buttonSearch: "Пошук",
         // buttonFiltr: "Критерії"
       },
