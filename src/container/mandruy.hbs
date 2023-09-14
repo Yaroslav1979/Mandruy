@@ -64,10 +64,30 @@
                 <h2 class="social-title">Слідкуй за нами в соцмережах </h2>
                 <p class="social-text">Отримуй актуальні новини про сервіс “Мандруй” та ділись із друзями. Дякуємо за підтримку. Якщо ти маєш якісь пропозиції чи зауваження щодо функціоналу або роботи сайту, тоді напиши нам. </p>
                 <div class="social-icons"> 
-                    <span class="social-icon" style="background-image: url('/svg/instagram.svg')"></span>
-                    <span class="social-icon" style="background-image: url('/svg/meta.svg')"></span>
-                    <span class="social-icon" style="background-image: url('/svg/telegram.svg')"></span>
-                </div>
+{{!--                 
+
+                      <div class="box-icon">
+                        <img class="social-iconca" src="/png/insta.png" alt="Instagram">
+                        
+                    </div>  
+                        <div class="box-icon">
+                        <img class="social-iconf" src="/png/face.png" alt="Facebook">
+                        
+                    </div>  
+                        <div class="box-icon">
+                        <img class="social-iconca" src="/png/telega.png" alt="Telegram">
+                    </div>              --}}
+
+                     <div class="box-icon">
+                    <img  class="social-iconca" src="/png/circle.png" alt="">
+                    <img  class="social-in" src="/png/instag.png" alt="">
+                    </div>
+                     <div class="box-icon">
+                    <img  class="social-iconca" src="/png/Facebook.png" alt="">
+                    </div>
+                    <div class="box-icon">
+                    <img  class="social-iconca" src="/png/Telegram.png" alt="">
+                    </div>
             </div>
         </div>
     </div>
@@ -84,19 +104,15 @@
                     <img src="/png/iconSearch.png" alt="" class="search-icon">
                     {{!-- <span class="search-icon" style="background-image: url('/svg/search.svg')"></spanstyle></span> --}}
                 </div>
-                <div class="sort">
-                    <div class="sort-category">
 
-                    </div>
-                    <div class="sort-region">
-                        
-                    </div>
-                    <div class="sort-name">
-
-                    </div>
-
-
-                </div>
+                <div class="filtr">
+                    {{#each filtr}}                    
+                        <div class="filtr-category">
+                            <p class="name-filtr">{{category}} </p>
+                            <input class="input-filtr" type="text" placeholder="{{placeyolder}}">
+                        </div> 
+                    {{/each}} 
+                 </div>
                 {{!-- <button class="butn">{{buttonSearch}} </button>
                 <button class="butn">{{buttonFiltr}} </button> --}}
             {{/with}}

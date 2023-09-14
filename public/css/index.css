@@ -116,7 +116,7 @@ color: #FFF;
 color: #FFF;
 font-size: 12px;
 font-weight: 400;
-line-height: 20px; /* 166.667% */
+line-height: 20px; 
 }
 
 .hero-btn {
@@ -149,7 +149,6 @@ font-weight: 700;
 }
 
 .learn {
-
 /* width: 168px;
 height: 40px; */
 color: #FFF;
@@ -235,8 +234,9 @@ font-weight: 700;
 /* --------------------Social---------------- */
 .social-cont {
   display: flex;
-position: relative;
+  position: relative;
 }
+
 .social {
   display: flex;
   width: 1920px;
@@ -244,76 +244,103 @@ position: relative;
   top: 0px;
   flex-shrink: 0;
   background-color: #000;
-  transform: skewY(3deg);
-  /* background-image: url(/img/Rectangle.png); */
-
+  transform: skewY(3deg);  
   margin: 20px 0;
 }
 
 .social-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   position: absolute;
   left: 880px;
   top: 160px;
-  width: 500px;
+  width: 30%
 }
 
 .social-title {
   color: #FFF;
-  font-family: e-Ukraine;
-  font-size: 30px;
+  font-family: e-Ukraine, sans-serif;
+  font-size: 28px;
   font-weight: 700;
   line-height: normal;
 }
 
 .social-text {
   color: #BCBCBC;
-  font-family: e-Ukraine;
+  font-family: e-Ukraine, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
   }
 
-
-
-
-/* .figure {
-  position: absolute;
-  width: 1920px;
-  top: 1680px;
-  height: 528px;
-  fill: #000;
-} */
-
 .picture:last-of-type {
   position: absolute;  
   top: -80px;
   left: 388px;
   width: 384px;
-  height: 667px;
+  height: 668px;
   transform: rotate(-2.001eg);
   flex-shrink: 0;
 }
-
 .picture {
   position: absolute;  
   top: -68px;
   left: 400px;
   width: 360px;
-  height: 667px;
+  height: 668px;
   transform: rotate(-2.001eg);
   flex-shrink: 0;
 }
 
 .social-icons {
   display: flex;
+ 
 }
 
-.social-icon {
-  width:150px;
-  height: 150px;
+
+
+.box-icon {
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid #454753 ;
+  border-radius: 30px;
+  background: #2D2E38;
+  box-shadow: 0px 4px 99px 0px #1c1d22; */
 }
 
+.social-iconca {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.social-in {
+  display: flex;
+  position: absolute;
+ top: 16px;
+  left: 110px;
+  width: 20px;
+  height: 20px;
+}
+
+
+.social-iconf {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  left: 22px;
+  width: 15px;
+  height: 20px;
+}
 /* ------------------ form search --------------- */
 
 .form {
@@ -361,8 +388,7 @@ position: relative;
   /* background-color: #A5AEFF; */
   /* color: #A5AEFF; */
   /* position: absolute;
-left: 1021px; */
-  
+left: 1021px; */  
 }
 
  /* .butn {
@@ -374,6 +400,57 @@ left: 1021px; */
   border-radius: 10px;
   background: #c8c7cc;
  } */
+
+ .filtr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+ }
+
+ .filtr-category {
+  display: flex;
+  flex-direction: row;
+  width: 312px;
+height: 47px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #F5F4FA;
+  
+  /* align-items: center;
+  align-content: center; */
+ }
+
+ .name-filtr {
+  display: flex;
+  width: 122px;
+  height: 20px;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: e-Ukraine, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+ }
+
+ .input-filtr {
+  display: flex;
+width: 147px;
+height: 21px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #989898;
+font-family: e-Ukraine, sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px
+ }
+ 
  /* -------------------------------- */
 
 .place-list {

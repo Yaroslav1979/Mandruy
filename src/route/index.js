@@ -97,11 +97,30 @@ router.get('/mandruy', function (req, res) {
     places: {
       title: 'ПОШУК МІСЦЬ',
       form: {
+        search: {
         searchFild: 'Пошук',
         // label: "Шукати туристичні місця",
         placeyolder: "Введіть назву місця",
         // buttonSearch: "Пошук",
         // buttonFiltr: "Критерії"
+        },
+
+        filtr: [
+          {
+          category: 'Категорї:',
+          placeyolder: 'Обрати категорію',
+        },
+        {
+          category: 'Область:',
+          placeyolder: 'Обрати область',
+        },
+        
+        {
+          category: 'Сортувати за:',
+          placeyolder: 'Назвою',
+        },
+      ]
+
       },
 
       place: [
