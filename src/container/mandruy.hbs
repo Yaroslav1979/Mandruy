@@ -57,16 +57,14 @@
     <div class="social-cont">   
         <div class="social"> 
             </div>
-                <img class="picture" src="/png/phone.png" alt="picture" srcset="">
-                <img class="picture" src="/png/screenPhone.png" alt="picture" srcset="">
-
+            <img class="picture" src="/png/phone.png" alt="picture" srcset="">
+            <img class="picture" src="/png/screenPhone.png" alt="picture" srcset="">
+            {{#with social}}
             <div class="social-block">
-                <h2 class="social-title">Слідкуй за нами в соцмережах </h2>
-                <p class="social-text">Отримуй актуальні новини про сервіс “Мандруй” та ділись із друзями. Дякуємо за підтримку. Якщо ти маєш якісь пропозиції чи зауваження щодо функціоналу або роботи сайту, тоді напиши нам. </p>
+                <h2 class="social-title">{{title}} </h2>
+                <p class="social-text">{{text}} </p>
                 <div class="social-icons"> 
-{{!--                 
-
-                      <div class="box-icon">
+{{!--                   <div class="box-icon">
                         <img class="social-iconca" src="/png/insta.png" alt="Instagram">
                         
                     </div>  
@@ -88,9 +86,10 @@
                     <div class="box-icon">
                     <img  class="social-iconca" src="/png/Telegram.png" alt="">
                     </div>
+                </div>
             </div>
+            {{/with}}
         </div>
-    </div>
 
     <div class="form">
     {{#with places}}
@@ -140,7 +139,22 @@
         {{/with}}
     </div>
     
-    <div class="add-place">
+    {{#with activeMap}}
+    <div class="map">
+             <h3 class="map-title">{{title}}</h3>
+             <iframe class="map-link" src="{{src}}" width="1300" height="620" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="googl-map-link">
+                <a href="https://www.google.com/maps/@50.393338,25.9771985,11.38z?authuser=0&entry=ttu" target="_blank" rel="noopener noreferrer">
+                <button class="googl-map-text">{{link}}</button></a>
+                <span class="google-map-arrow" style="background-image: url('/svg/IconMapArrow.svg')"></span>
+              </div>    </div>
+    {{/with}}
+
+   
+      
+        
+         <div class="add-place">
         {{#with addPlace}}
 
             <h2 class="add-title">{{addTitle}} </h2>
