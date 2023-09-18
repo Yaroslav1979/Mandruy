@@ -151,6 +151,8 @@
               </div>    </div>
     {{/with}}
 
+
+
    
       
         
@@ -159,29 +161,41 @@
 
             <h2 class="add-title">{{addTitle}} </h2>
             
-            <div class="add-block">
-                <div class="add-part-blok">
-                <img src="{{addPhoto}}" alt="add your photo">
-                    <div class="add-form">
-                    <input type="text" placeholder="{{addPlaceholder}}">
-                        {{#each addFiltr}}
-                        <div class="category">
-                            <input class="each-ctg" type="text" placeholder="{{this}}" >
-                        </div>
-                        {{/each}}                
-                    <input type="text" class="add-coord" placeholder="{{addCoordination}}">
-                    </div>
+            
+
+              <div class="add-block">
+                <div class="upload-container" onclick="document.getElementById('file-upload').click();">
+                    <img src="{{addPhoto}}" alt="Місце для фотографії">
+                    <label for="file-upload" class="upload-text">Обрати фото...</label>
+                    <input type="file" id="file-upload" accept="image/*">
                 </div>
+                
+                <div class="add-part-block">
+                    <input class="add-name" type="text" placeholder="{{addPlaceholder}}">
+                     <div class="category">
+                    
+                        {{#each addFiltr}}
+                       
+                            <input class="each-ctg" type="text" placeholder="{{this}}" >
+                       
+                        {{/each}}                
+                    </div>
+                   
+                     <input class="add-coord" type="text" placeholder="{{addCoordination}}">
+                </div>  
             </div>
 
-            <input type="text" class="add-descr" placeholder="{{addDescription}}"> 
+              <div class="descr">
+                <input type="text" class="add-descr" placeholder="{{addDescription}}"> 
+            </div>
             
-            <div>
-            {{#with addButtons}}
-                <button>{{del}} </button>
-                <button>{{redact}} </button>
-                <button>{{add}} </button>
-            {{/with}}
+            <div class="buttons">
+                <div class="add-buttons">
+                {{#with addButtons}}
+                    <button class="icon-categor"> <span class="icon-trash" style="background-image: url('/svg/Icon-Trash.svg')"></span> </button>
+                    <button class="add"><span>{{add}} </span><span class="google-map-arrow" style="background-image: url('/svg/IconMapArrow.svg')"></span></button>
+                {{/with}}
+                </div>
             </div>
 
         {{/with}}

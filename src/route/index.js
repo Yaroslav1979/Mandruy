@@ -171,19 +171,17 @@ router.get('/mandruy', function (req, res) {
     // ----------------------------------------
 
     addPlace: {
-      addTitle: "Додай свою цікаву локацію",
-      addPhoto: "https://picsum.photos/500/400",
-      addPlaceholder: "Додати своє туристичне місце",
+      addTitle: "Додати місце",
+      addPhoto: "/png/emptyPhoto.png",
+      addPlaceholder: "Введіть назву",
       addFiltr: [
-        'category1', 'category2', 'category3,',
-        'category4', 'category5', 'category6',
+        'Табір', 'Мандрівка', 'Питна вода',
+        "Пам'ятка", 'Музей', 'Водойма', 'Доступно для транспорту',
       ],
-      addCoordination: 'Додай координати твого місця',
-      addDescription: 'Додай короткий опис твого місця',
+      addCoordination: 'Введіть координати',
+      addDescription: 'Введіть короткий опис...',
      addButtons: {
-        del: 'Очистити все',
-        redact: 'Редагувати',
-        add: 'Додати',
+         add: 'Надіслати',
       }, 
     },
 
