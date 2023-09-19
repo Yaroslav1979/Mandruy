@@ -105,10 +105,8 @@ router.get('/mandruy', function (req, res) {
       form: {
         search: {
         searchFild: 'Пошук',
-        // label: "Шукати туристичні місця",
-        placeyolder: "Введіть назву місця",
-        // buttonSearch: "Пошук",
-        // buttonFiltr: "Критерії"
+          placeyolder: "Введіть назву місця",
+       
         },
 
         filtr: [
@@ -174,10 +172,38 @@ router.get('/mandruy', function (req, res) {
       addTitle: "Додати місце",
       addPhoto: "/png/emptyPhoto.png",
       addPlaceholder: "Введіть назву",
-      addFiltr: [
-        'Табір', 'Мандрівка', 'Питна вода',
-        "Пам'ятка", 'Музей', 'Водойма', 'Доступно для транспорту',
-      ],
+      addFiltr: {
+        camp: {
+          name: 'Табір', 
+          svgIcon: "url('/svg/camp.svg')"
+          },
+        travel: { 
+          name: 'Мандрівка', 
+          svgIcon: "url('/svg/tree.svg')"
+        },
+        water: { 
+          name:  'Питна вода', 
+          svgIcon: "url('/svg/water.svg')"
+        },
+        monument: { 
+          name: "Пам'ятка", 
+          svgIcon: "url('/svg/monument.svg')"
+        },
+        museum: { 
+          name:  'Музей', 
+          svgIcon: "url('/svg/museum.svg')"
+        },
+        
+        waterPond: { 
+          name:  'Водойма',  
+          svgIcon: "url('/svg/waterPond.svg')"
+        },
+      
+        transport: { 
+          name:  'Доступно для транспорту',
+          svgIcon: "url('/svg/car.svg')"
+        },  
+      },
       addCoordination: 'Введіть координати',
       addDescription: 'Введіть короткий опис...',
      addButtons: {
@@ -185,24 +211,52 @@ router.get('/mandruy', function (req, res) {
       }, 
     },
 
-    founders: [
-      {
-        personPhoto: "https://picsum.photos/300/500",
-        name: 'Андрій Гринчук',
-        about: 'Автор ідеї, веб-дизайнер та головний натхненник проекту',
-      },
+    // founders: [
+    //   {
+    //     personPhoto: "https://picsum.photos/300/500",
+    //     name: 'Андрій Гринчук',
+    //     about: 'Автор ідеї, веб-дизайнер та головний натхненник проекту',
+    //   },
 
-      {
-        personPhoto: "https://picsum.photos/300/500",
-        name: 'Ярослав Ковтонюк',
-        about: 'Верстка та front-end розробник сайту',
-      },
+    //   {
+    //     personPhoto: "https://picsum.photos/300/500",
+    //     name: 'Ярослав Ковтонюк',
+    //     about: 'Верстка та front-end розробник сайту',
+    //   },
 
-      { personPhoto: "https://picsum.photos/300/500",
-        name: 'Ім*я Прізвище',
-        about: 'Опис роботи учасника проекту',
-      }
-    ],
+    //   { personPhoto: "https://picsum.photos/300/500",
+    //     name: 'Ім*я Прізвище',
+    //     about: 'Опис роботи учасника проекту',
+    //   }
+    // ],
+
+    quastions: {
+      title: 'Поширені запитання',
+      details: [  
+          {    
+            quastion: 'Як можна додати власне місце?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+          },
+          {    
+            quastion: 'Скільки часу потрібно на обробку мого запиту?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+          },
+          {    
+            quastion: 'Як віднайти потрібне мені місце?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+          },
+          {    
+            quastion: 'Для кого призначений цей сайт?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+          },
+      ],
+    },
+
+    contacts: {
+    title: 'Контакти',
+    address:
+      ['ourwebsite.com', 'ouremail1222@gmail.com', '@telegramnickname'],
+    },
 
     footer: {
         projectLogo: 'MANDRUY.COM',
