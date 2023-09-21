@@ -54,9 +54,11 @@
     </div>
     {{/with}}
 
-    <div class="social-cont">   
-        <div class="social"> 
+    <div class="social-cont"> 
+
+            <div class="social"> 
             </div>
+
             <img class="picture" src="/png/phone.png" alt="picture" srcset="">
             <img class="picture" src="/png/screenPhone.png" alt="picture" srcset="">
             {{#with social}}
@@ -242,26 +244,50 @@
 
         {{/with}}
     </div>
-
-    <div class="quastions">
-        {{#with quastions}}
-          <h1>{{title}} </h1>
+<div>
+    <div class="questions">
+        {{#with questions}}
+          <h1 class="questions-title">{{title}} </h1>
           {{#each details}}
-            <p class="quastion-text">{{quastion}} </p>
+          <div class="quastion-text-block">
+            <p class="quastion-text">{{question}} </p>
             {{!-- <p class="answer-text">{{answer}} </p> --}}
+            <p class="icon-openanswer">+</p>
+            </div>
           {{/each}}
         {{/with}}
     </div>
 
     <div class="contacts">
+       
         {{#with contacts}}
-        <h3>{{title}} </h3>
-        {{#each address}}
-            {{.}}
-        {{/each}}
+        <div class="contacts-block">
+        <div class="contacts-fill">
+        </div>
+        <h3 class="contact-title">{{title}} </h3>
+        <div class="contact-cont">
+        {{#with address}}                
+            <div class="website-block">
+                <span class="icon-address" style="background-image: url('/svg/iconSite.svg')"></span>
+                <p class="contact-item">{{website}} </p>
+            </div>
+            <div class="email-block">
+                <span class="icon-address" style="background-image: url('/svg/iconMail.svg')"></span>
+                <p class="contact-item">{{email}} </p>
+            </div>
+            <div class="telegram-block">
+                <span class="icon-address" style="background-image: url('/svg/iconTele.svg')"></span>
+                <p class="contact-item">{{telegram}} </p>
+            </div>
         {{/with}}
+        </div>
+        </div>
+        
+        
+        {{/with}}
+         
     </div>
-
+</div>
 
      {{!-- <div class="founders">
 
@@ -272,11 +298,11 @@
             
         {{/each}}
     </div> --}}
-
+<div class="fotter-position">
     <footer class="footer">
         {{#with footer}}
-            <div class="logo">
-                <img src="" alt="{{projectLogo}}">
+            <div class="laba">
+                {{!-- <img src="" alt="{{projectLogo}}"> --}}
             </div>
             <h4 class="project">{{projectTitle}} </h4>
             <p class="descr-project">{{projectDescription}}  </p>
@@ -285,6 +311,8 @@
             {{/each}}
         {{/with}}
     </footer>
+    </div>
+   
 
 
     {{/with}}  

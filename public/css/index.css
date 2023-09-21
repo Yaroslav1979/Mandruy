@@ -255,7 +255,7 @@ font-weight: 700;
 
 .social {
   display: flex;
-  width: 1920px;
+  width: 100%;
   height: 460px;
   top: 0px;
   flex-shrink: 0;
@@ -784,14 +784,161 @@ fill: #000;
   line-height: 140%;
 }
 
+/* ------------------- questions -------------------*/
+.bgd {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1600px;
+ 
+}
 
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  gap: 20px;
+  padding: 40px 0;
+  background-color: #000; 
+}
 
-/* ------------------- */
+.questions-title {
+color: #FFF;
+text-align: center;
+font-family: e-Ukraine, sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 18px; 
+text-transform: uppercase;
+padding: 20px 0;
+}
 
+.quastion-text-block {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+   width: 1096px;
+  /* justify-self: center; */
+  border-radius: 5px;
+  border: 2px solid #8C9BA5;
+  padding: 16px 20px 0 20px;
+ 
+}
 
+.quastion-text {
+  color: #FFF;
+  font-family: e-Ukraine, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+/* line-height: 18px; */
+}
 
+.icon-openanswer {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+/* ------------ contacts ---------------- */
+
+.contacts {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.contacts-fill {
+  display: flex;
+  position: absolute; 
+  background-color: #fff;
+  transform:skewY(-3deg);
+  top: 60px;
+
+  bottom: 100px;
+  height: 560px;
+  width: 100%;
+}
+
+.contacts.block {
+  display: flex;
+  position: relative;
+
+}
+.contact-title {
+  display: flex;
+  position: absolute;
+  left: 47%;
+  top: 35%;
+  color: #000;
+
+  color: #000;
+  text-align: center;
+  font-family: e-Ukraine, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; 
+  text-transform: uppercase;
+}
+
+.website-block, .email-block, .telegram-block {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  
+  
+}
+
+ .icon-address {
+  display: block;
+  width: 42px;  
+  height: 42px;
+  flex-shrink: 0;
+ 
+}
+
+.contact-cont {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 1000px;
+  left: 25%;
+  top: 45%;
+}
+  
+.contact-item {
+  color: #000;
+/* text-align: center; */
+font-family: e-Ukraine, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+padding-top: 20px;
+}
 
 /* ------------ footer ---------------- */
-.footer {
-  background-color: forestgreen;
+.fotter-position {
+  display: flex;
+  position: relative;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+ top: -180px;
+ 
+  background-color: #000;
+}
+/* .laba {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+} */

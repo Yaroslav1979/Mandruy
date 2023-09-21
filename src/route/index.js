@@ -230,23 +230,23 @@ router.get('/mandruy', function (req, res) {
     //   }
     // ],
 
-    quastions: {
+    questions: {
       title: 'Поширені запитання',
       details: [  
           {    
-            quastion: 'Як можна додати власне місце?',
+            question: 'Як можна додати власне місце?',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
           },
           {    
-            quastion: 'Скільки часу потрібно на обробку мого запиту?',
+            question: 'Скільки часу потрібно на обробку мого запиту?',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
           },
           {    
-            quastion: 'Як віднайти потрібне мені місце?',
+            question: 'Як віднайти потрібне мені місце?',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
           },
           {    
-            quastion: 'Для кого призначений цей сайт?',
+            question: 'Для кого призначений цей сайт?',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
           },
       ],
@@ -255,12 +255,16 @@ router.get('/mandruy', function (req, res) {
     contacts: {
     title: 'Контакти',
     address:
-      ['ourwebsite.com', 'ouremail1222@gmail.com', '@telegramnickname'],
+      {
+        website: 'ourwebsite.com',         
+        email: 'ouremail1222@gmail.com', 
+        telegram: '@telegramnickname'
+      },
     },
 
     footer: {
         projectLogo: 'MANDRUY.COM',
-        projectTitle: 'Lorem Ipsum',
+        projectTitle: 'MANDRUY',
         projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
         socialLinks: [
           {
