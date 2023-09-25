@@ -264,7 +264,7 @@ router.get('/mandruy', function (req, res) {
 
     footer: {
         projectLogo: 'MANDRUY.COM',
-        projectTitle: 'MANDRUY',
+        projectTitle: 'Mандруй',
         projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
         socialLinks: [
           {

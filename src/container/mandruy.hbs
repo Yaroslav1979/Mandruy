@@ -1,4 +1,5 @@
-<main>    
+<main>  
+    <div>
    
     {{#with page}}
     <div class="header">
@@ -153,10 +154,6 @@
               </div>    </div>
     {{/with}}
 
-
-
-   
-      
         
          <div class="add-place">
         {{#with addPlace}}
@@ -289,6 +286,8 @@
     </div>
 </div>
 
+</div>  
+
      {{!-- <div class="founders">
 
         {{#each founders}}
@@ -298,22 +297,52 @@
             
         {{/each}}
     </div> --}}
-<div class="fotter-position">
-    <footer class="footer">
-        {{#with footer}}
-            <div class="laba">
-                {{!-- <img src="" alt="{{projectLogo}}"> --}}
-            </div>
-            <h4 class="project">{{projectTitle}} </h4>
-            <p class="descr-project">{{projectDescription}}  </p>
-            {{#each socialLinks}}
-                <a href="{{href}}" >{{link}} </a>
-            {{/each}}
-        {{/with}}
+    <section > 
+    <footer class="footer-position">
+        <div class="footer">
+            {{#with footer}}
+
+            <div class="footer-cont">
+                    <div class="laba">
+                        <h1 class="footer-label">
+                            M
+                        </h1>{{!-- <img src="" alt="{{projectLogo}}"> --}}
+                    </div>
+
+                <h4 class="title-footer">{{projectTitle}} </h4>
+                <p class="descr-project">{{projectDescription}} </p>
+
+                {{!-- {{#each socialLinks}}
+                    <a href="{{href}}" >{{link}} </a>
+                {{/each}} --}}
+            </div> 
+            {{/with}}
+        </div> 
+        
+                                 
+                <div class="social-icons">
+{{#with social}}
+                     <div class="box-icon">
+                        <img  class="social-iconca" src="/png/circle.png" alt="">
+                        <img  class="social-in" src="/png/instag.png" alt="">
+                    </div>
+
+                     <div class="box-icon">
+                        <img  class="social-iconca" src="/png/Facebook.png" alt="">
+                    </div>
+
+                    <div class="box-icon">
+                        <img  class="social-iconca" src="/png/Telegram.png" alt="">
+                    </div>
+{{/with}}    
+                </div>
+                    
+
+                
+       
+    
     </footer>
-    </div>
+    </section>
    
-
-
     {{/with}}  
 </main>
