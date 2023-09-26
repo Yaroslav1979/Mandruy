@@ -67,27 +67,19 @@
                 <h2 class="social-title">{{title}} </h2>
                 <p class="social-text">{{text}} </p>
                 <div class="social-icons"> 
-{{!--                   <div class="box-icon">
-                        <img class="social-iconca" src="/png/insta.png" alt="Instagram">
-                        
-                    </div>  
-                        <div class="box-icon">
-                        <img class="social-iconf" src="/png/face.png" alt="Facebook">
-                        
-                    </div>  
-                        <div class="box-icon">
-                        <img class="social-iconca" src="/png/telega.png" alt="Telegram">
-                    </div>              --}}
 
-                     <div class="box-icon">
-                    <img  class="social-iconca" src="/png/circle.png" alt="">
-                    <img  class="social-in" src="/png/instag.png" alt="">
+                     <div class="box-icon"> <a href="">
+                        <img  class="social-iconca" src="/png/circle.png" alt="">
+                        <img  class="social-in" src="/png/instag.png" alt="">
+                        </a>
                     </div>
-                     <div class="box-icon">
-                    <img  class="social-iconca" src="/png/Facebook.png" alt="">
+                    <div class="box-icon"> <a href="">
+                        <img  class="social-iconca" src="/png/Facebook.png" alt="">
+                        </a>
                     </div>
-                    <div class="box-icon">
-                    <img  class="social-iconca" src="/png/Telegram.png" alt="">
+                    <div class="box-icon"> <a href="">
+                        <img  class="social-iconca" src="/png/Telegram.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -153,15 +145,10 @@
                 <span class="google-map-arrow" style="background-image: url('/svg/IconMapArrow.svg')"></span>
               </div>    </div>
     {{/with}}
-
         
          <div class="add-place">
         {{#with addPlace}}
-
             <h2 class="add-title">{{addTitle}} </h2>
-            
-            
-
               <div class="add-block">
                 <div class="upload-container" onclick="document.getElementById('file-upload').click();">
                     <img src="{{addPhoto}}" alt="Місце для фотографії">
@@ -255,48 +242,35 @@
         {{/with}}
     </div>
 
-    <div class="contacts">
-       
-        {{#with contacts}}
-        <div class="contacts-block">
-        <div class="contacts-fill">
-        </div>
-        <h3 class="contact-title">{{title}} </h3>
-        <div class="contact-cont">
-        {{#with address}}                
-            <div class="website-block">
-                <span class="icon-address" style="background-image: url('/svg/iconSite.svg')"></span>
-                <p class="contact-item">{{website}} </p>
+        <div class="contacts">       
+            {{#with contacts}}
+            <div class="contacts-block">
+                <div class="contacts-fill">
             </div>
-            <div class="email-block">
-                <span class="icon-address" style="background-image: url('/svg/iconMail.svg')"></span>
-                <p class="contact-item">{{email}} </p>
+            <h3 class="contact-title">{{title}} </h3>
+            <div class="contact-cont">
+            {{#with address}}                
+                <div class="website-block">
+                    <span class="icon-address" style="background-image: url('/svg/iconSite.svg')"></span>
+                    <a href="{{website}}" class="contact-item">{{website}} </a>
+                </div>
+                <div class="email-block">
+                    <span class="icon-address" style="background-image: url('/svg/iconMail.svg')"></span>
+                    <a href="mailto{{email}}" class="contact-item">{{email}} </a>
+                </div>
+                <div class="telegram-block">
+                    <span class="icon-address" style="background-image: url('/svg/iconTele.svg')"></span>
+                    <a href="mailto{{telegram}}" class="contact-item">{{telegram}} </a>
+                </div>
+            {{/with}}
             </div>
-            <div class="telegram-block">
-                <span class="icon-address" style="background-image: url('/svg/iconTele.svg')"></span>
-                <p class="contact-item">{{telegram}} </p>
-            </div>
-        {{/with}}
+        </div>  
+        {{/with}}         
         </div>
-        </div>
-        
-        
-        {{/with}}
-         
     </div>
-</div>
 
 </div>  
 
-     {{!-- <div class="founders">
-
-        {{#each founders}}
-            <img src="{{personPhoto}}" alt="photo">
-            <h3 class="faunder-name">{{name}} </h3>
-            <p class="place-descr">{{about}} </p>
-            
-        {{/each}}
-    </div> --}}
     <section > 
     <footer class="footer-position">
         <div class="footer">
@@ -304,38 +278,33 @@
 
             <div class="footer-cont">
                     <div class="laba">
-                        <h1 class="footer-label">
-                            M
-                        </h1>{{!-- <img src="" alt="{{projectLogo}}"> --}}
+                        <h1 class="footer-label"> M </h1>
                     </div>
-
                 <h4 class="title-footer">{{projectTitle}} </h4>
                 <p class="descr-project">{{projectDescription}} </p>
-
-                {{!-- {{#each socialLinks}}
-                    <a href="{{href}}" >{{link}} </a>
-                {{/each}} --}}
-            </div> 
+             </div> 
             {{/with}}
         </div> 
-        
                                  
-                <div class="social-icons">
-{{#with social}}
-                     <div class="box-icon">
+            <div class="social-icons">
+                {{#with social}}
+                     <div class="box-icon"> <a href="">
                         <img  class="social-iconca" src="/png/circle.png" alt="">
                         <img  class="social-in" src="/png/instag.png" alt="">
+                        </a>
                     </div>
 
-                     <div class="box-icon">
+                     <div class="box-icon"> <a href="">
                         <img  class="social-iconca" src="/png/Facebook.png" alt="">
+                    </a>
                     </div>
 
-                    <div class="box-icon">
+                    <div class="box-icon"> <a href="">
                         <img  class="social-iconca" src="/png/Telegram.png" alt="">
+                    </a>
                     </div>
-{{/with}}    
-                </div>
+                {{/with}}    
+            </div>
                     
 
                 
