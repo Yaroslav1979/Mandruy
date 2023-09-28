@@ -1,48 +1,45 @@
 <main>  
-    <div>
-   
-    {{#with page}}
-    <div class="header">
-        {{#with header}}
-        <div class="top-content">    
-            <strong class="logo">{{logotype}} </strong>
-            <span>
-                {{#each navigation}}           
-                <a href={{url}} target="_blank" class="nav-content">{{text}} </a>
-                {{/each}}
-            </span>
-            {{!-- <div class="srv-btn">
-                {{#each icon}}
-                <button> {{.}}</button>
-                {{/each}}
-            </div> --}}
-        </div>
-        <div class="hero-block">
-        {{#with hero}}  
-            <h1 class="hero-title">{{title}} </h1>
-            <p class="hero-text">{{text}} </p>
-            <div class="hero-btn">
-            {{#with buttons}}
-                <button class="search">{{serch}} </button>
-                <div>
-                 <button class="learn">{{learn}} 
-                  
-                   </button>
-                    <span class="icon" style="background-image: url('/svg/arrow-more.svg')"></span>
+    <div>   
+            {{#with page}}
+            <div class="header">
+                {{#with header}}
+                <div class="top-content">    
+                    <strong class="logo">{{logotype}} </strong>
+                    <span>
+                        {{#each navigation}}           
+                        <a href=#{{id}} class="nav-content">{{text}} </a>
+                        {{/each}}
+                    </span>
+                    {{!-- <div class="srv-btn">
+                        {{#each icon}}
+                        <button> {{.}}</button>
+                        {{/each}}
+                    </div> --}}
+                </div>
 
-                 </div>
-            {{/with}}
+                <div class="hero-block">
+                {{#with hero}}  
+                    <h1 class="hero-title">{{title}} </h1>
+                    <p class="hero-text">{{text}} </p>
+                    <div class="hero-btn">
+                    {{#with buttons}}
+                        <a href="#{{search.id}}" class="search"> 
+                            {{search.text}}</a>                     
+                        <div>
+                            <a href="#{{learn.id}}" class="learn">
+                                {{learn.text}} <span class="icon" style="background-image: url('/svg/arrow-more.svg')"></span>
+                            </a>  
+                        </div>
+                    {{/with}}
+                    </div>
+                </div>
+                {{/with}}
             </div>
-
-            {{/with}}
-        
-        {{/with}} 
-        </div>
-    </div>
+            {{/with}} 
 
     {{#with about}}
     <div class="about">
-        <h2 class="about-title">{{title}} </h2>
+        <h2 class="about-title" id="service">{{title}} </h2>
         <div class="about-cont">
             {{#each content}}        
             <div class="about-items">
@@ -55,7 +52,7 @@
     </div>
     {{/with}}
 
-    <div class="social-cont"> 
+    <div class="social-cont" id="social"> 
 
             <div class="social"> 
             </div>
@@ -88,30 +85,64 @@
 
     <div class="form">
     {{#with places}}
-        <h2>{{title}}</h2>
+        <h2 id="search">{{title}}</h2>
     {{!-- ------------------------------------- --}}
-            <div >
+          
             {{#with form}}
                 <div class="form-search">
-                    {{!-- <label for="serch" >{{label}} </label> --}}
                     <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}" name="serch">
                     <img src="/png/iconSearch.png" alt="" class="search-icon">
-                    {{!-- <span class="search-icon" style="background-image: url('/svg/search.svg')"></spanstyle></span> --}}
                 </div>
 
                 <div class="filtr">
-                    {{#each filtr}}                    
+                    {{#with filtr}}  
+
+                        {{#with eachCategory}}
+                        <div class="filtr-category">                           
+                                <em class="name-filtr">{{category}} </em>
+                                <select class="input-filtr" name="" id="">
+                                    {{#each option}}
+                                        <option>                                    
+                                            {{.}}
+                                        </option>
+                                    {{/each}}                                                    
+                                </select>                            
+                        </div>
+                         {{/with}} 
+
+                    {{#with eachRegion}}
+                            <div class="filtr-category">
+                                    
+                                    <em class="name-filtr">{{region}} </em>
+                                    <select class="input-filtr" name="" id="">
+                                        {{#each option}}
+                                            <option>                                    
+                                                {{.}}
+                                            </option>
+                                        {{/each}}                                                         
+                                    </select> 
+                                
+                            </div>
+                    {{/with}}  
+
+        
+                    {{#with eachSort}}
                         <div class="filtr-category">
-                            <p class="name-filtr">{{category}} </p>
-                            <select class="input-filtr" name="{{placeyolder}}" id="">
-                                <option value="">
-                                        {{option}}
-                                </option>
+                                 
+                            <em class="name-filtr">{{sort}} </em>
+                            <select class="input-filtr" name="" id="">
+                                {{#each option}}
+                                    <option>                                    
+                                        {{.}}
+                                    </option>
+                                {{/each}}                                                         
                             </select>
-                           
+
+                            {{/with}}
                         </div> 
-                    {{/each}} 
-                 </div>
+
+                    {{/with}} 
+               
                 {{!-- <button class="butn">{{buttonSearch}} </button>
                 <button class="butn">{{buttonFiltr}} </button> --}}
             {{/with}}
@@ -148,7 +179,7 @@
         
          <div class="add-place">
         {{#with addPlace}}
-            <h2 class="add-title">{{addTitle}} </h2>
+            <h2 class="add-title" id="addPlace">{{addTitle}} </h2>
               <div class="add-block">
                 <div class="upload-container" onclick="document.getElementById('file-upload').click();">
                     <img src="{{addPhoto}}" alt="Місце для фотографії">
@@ -247,7 +278,7 @@
             <div class="contacts-block">
                 <div class="contacts-fill">
             </div>
-            <h3 class="contact-title">{{title}} </h3>
+            <h3 class="contact-title" id="contacts">{{title}} </h3>
             <div class="contact-cont">
             {{#with address}}                
                 <div class="website-block">

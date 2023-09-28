@@ -39,23 +39,23 @@ router.get('/mandruy', function (req, res) {
       {
         text: 'Про сервіс',
         url: 'https://example.com/home',
+        id: "service",
       },
       {
         text: 'Пошук місць',
         url: 'https://example.com/about',
+        id: "search",
       },
       {
         text: 'Додати місце',
         url: 'https://example.com/services',
+        id: "addPlace",
       },
       {
         text: 'Контакти',
         url: 'https://example.com/services',
+        id: "contacts",
       },
-      // {
-      //   text: 'Про нас',
-      //   url: 'https://example.com/services',
-      // },
     ],
   
     // icon: [
@@ -65,8 +65,14 @@ router.get('/mandruy', function (req, res) {
       title: 'Вітаємо вас на «Мандруй»',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cra',
       buttons: {
-        serch: 'Розпочати пошук',
-        learn: 'Дізнатися більше'
+        search: {
+          text: 'Розпочати пошук',
+          id: "search",
+        },
+        learn: 
+        {text: 'Дізнатися більше',
+        id: "social",
+      },
       }
     } 
   },  
@@ -99,32 +105,37 @@ router.get('/mandruy', function (req, res) {
     text: 'Отримуй актуальні новини про сервіс “Мандруй” та ділись із друзями. Дякуємо за підтримку. Якщо ти маєш якісь пропозиції чи зауваження щодо функціоналу або роботи сайту, тоді напиши нам.'
   },
 
-
     places: {
       title: 'ПОШУК МІСЦЬ',
       form: {
         search: {
         searchFild: 'Пошук',
-          placeyolder: "Введіть назву місця",
-       
+          placeyolder: "Введіть назву місця",       
         },
 
-        filtr: [
+        filtr: {
+          eachCategory:
           {
-          category: 'Категорї:',
-          option: 'Обрати категорію',
+          category: 'Категорія:',
+          option: ['Обрати категорію', 'Табір', 'Мандрівка', 'Питна вода', 'Пам’ятка', 
+          'Музей', 'Водойма', 'Доступно для транспорту', ]        
         },
+        eachRegion:
         {
-          category: 'Область:',
-          option: 'Обрати область',
-        },
-        
+          region: 'Область:',
+          option: ['Обрати область', 'Вінницька', 'Волинська', 'Дніпропетровська', 
+          'Донецька', 'Житомирська', 'Закарпатська', 'Запорізька', 'Івано-Франківська',
+           'Київська', 'Кіровоградська', 'Луганська', 'Львівська', 'Миколаївська',
+          'Одеська', 'Полтавська', 'Рівненська', 'Сумська', 'Тернопільська', 'Харківська',
+          'Херсонська'],
+         },
+        eachSort:
         {
-          category: 'Сортувати за:',
-          option: 'Назвою',
+          sort: 'Сортувати:',
+          option: ['Вид сортування', 'За назвою', 'За датою'],
+          
         },
-      ]
-
+        }
       },
 
       place: [
