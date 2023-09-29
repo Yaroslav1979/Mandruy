@@ -1,0 +1,39 @@
+
+            <div class="header">
+
+                {{#with header}}
+                <div class="top-content">    
+                    <strong class="logo">{{logotype}} </strong>
+                    <span>
+                        {{#each navigation}}           
+                        <a href=#{{id}} class="nav-content">{{text}} </a>
+                        {{/each}}
+                    </span>
+                    {{!-- <div class="srv-btn">
+                        {{#each icon}}
+                        <button> {{.}}</button>
+                        {{/each}}
+                    </div> --}}
+                </div>
+
+                <div class="hero-block">
+                {{#with hero}}  
+                    <h1 class="hero-title">{{title}} </h1>
+                    <p class="hero-text">{{text}} </p>
+                    <div class="hero-btn">
+                    {{#with buttons}}
+                        <a href="#{{search.id}}" class="search"> 
+                            {{search.text}}</a>                     
+                        <div>
+                            <a href="#{{learn.id}}" class="learn">
+                                {{learn.text}} <span class="icon" style="background-image: url('/svg/arrow-more.svg')"></span>
+                            </a>  
+                        </div>
+                    {{/with}}
+                    </div>
+                </div>
+                {{/with}}
+              {{/with}} 
+              
+            </div>
+            

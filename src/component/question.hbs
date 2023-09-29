@@ -1,0 +1,12 @@
+    <div class="questions">
+            {{#with questions}}
+            <h1 class="questions-title">{{title}} </h1>
+             {{#each details}}
+            <div class="quastion-text-block">
+                <p class="quastion-text">{{question}} </p>
+                {{!-- <p class="answer-text">{{answer}} </p> --}}
+                <p class="icon-openanswer">+</p>
+            </div>
+          {{/each}}
+        {{/with}}
+    </div>

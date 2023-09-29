@@ -1,21 +1,34 @@
-  <footer>      
-        {{#with footer.social}}            
-            {{> link text=email.text href=email.href blank=true }}
-            {{> link text=phone.text href=phone.href blank=true }}
-            {{> link text=LinkedIn.text href=LinkedIn.href blank=true noLine=true}}
-        {{/with}}
-        <br>        
-        <br>
-      <div>            
-        <em> Copyright by 
-          {{#with header}}
-              {{name.firstname}} {{name.lastname}} 
-          {{/with}}
-        </em>            
-      </div>
-          <br>
-          <address> 
-          {{footer.address}} 
-        </address>
-      </div>   
-  </footer>
+ <footer class="footer-position">
+  <div class="footer">
+      {{#with footer}}
+
+       <div class="footer-cont">
+              <div class="laba">
+                  <h1 class="footer-label"> M </h1>
+              </div>
+          <h4 class="title-footer">{{projectTitle}} </h4>
+          <p class="descr-project">{{projectDescription}} </p>
+       </div> 
+      {{/with}}
+  </div> 
+                           
+  <div class="social-icons">
+       {{#with social}}
+            <div class="box-icon"> <a href="">
+               <img  class="social-iconca" src="/png/circle.png" alt="">
+               <img  class="social-in" src="/png/instag.png" alt="">
+               </a>
+            </div>
+
+            <div class="box-icon"> <a href="">
+               <img  class="social-iconca" src="/png/Facebook.png" alt="">
+            </a>
+            </div>
+
+            <div class="box-icon"> <a href="">
+               <img  class="social-iconca" src="/png/Telegram.png" alt="">
+            </a>
+           </div>
+      {{/with}}    
+   </div>
+</footer>

@@ -1,0 +1,14 @@
+{{#with about}}
+    <div class="about">
+        <h2 class="about-title" id="service">{{title}} </h2>
+        <div class="about-cont">
+            {{#each content}}        
+            <div class="about-items">
+                <img class="about-img" src="{{picture}}" alt="picture">
+                <h2 class="about-slogan">{{slogan}} </h2>
+                <p class="about-descr">{{description}}</p>
+            </div>                 
+        {{/each}}
+        </div> 
+    </div>
+{{/with}}

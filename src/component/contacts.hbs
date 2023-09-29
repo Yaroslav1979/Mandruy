@@ -1,0 +1,25 @@
+      <div class="contacts">       
+            {{#with contacts}}
+            <div class="contacts-block">
+                <div class="contacts-fill">
+            </div>
+            <h3 class="contact-title" id="contacts">{{title}} </h3>
+            <div class="contact-cont">
+            {{#with address}}                
+                <div class="website-block">
+                    <span class="icon-address" style="background-image: url('/svg/iconSite.svg')"></span>
+                    <a href="{{website}}" class="contact-item">{{website}} </a>
+                </div>
+                <div class="email-block">
+                    <span class="icon-address" style="background-image: url('/svg/iconMail.svg')"></span>
+                    <a href="mailto{{email}}" class="contact-item">{{email}} </a>
+                </div>
+                <div class="telegram-block">
+                    <span class="icon-address" style="background-image: url('/svg/iconTele.svg')"></span>
+                    <a href="mailto{{telegram}}" class="contact-item">{{telegram}} </a>
+                </div>
+              {{/with}}
+              </div>
+            </div>  
+        {{/with}}         
+      </div>
