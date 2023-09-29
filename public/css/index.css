@@ -608,7 +608,7 @@ line-height: 140%;
 .upload-container {
   background-color: #F5F4FA;
   width: 400px;
-  height: 308px;
+  height: 312px;
   border: 1px solid #F5F4FA;
   display: flex;
   flex-direction: column;
@@ -639,24 +639,21 @@ input[type="file"] {
 
 .add-block {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
-  align-items: center;
-   
-  flex-shrink: 0;  
+  gap: 12px;
+  justify-content: center;  
+  align-items: center;   
   padding: 50px 0;
 }
-
 .add-part-block {
   display: flex;
   flex-direction: column;  
-  gap: 32px; 
+  gap: 36px; 
 }
 
 .add-name {  
-  height: 68px;
+  height: 48px;
   flex-shrink: 0;
+  padding: 0 20px;
   border-radius: 5px;
   border: 2px solid #E7E6ED;
 }
@@ -667,47 +664,73 @@ input[type="file"] {
   flex-wrap: wrap;
   max-width: 800px;  
 }
+
 .each-ctg {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
+
+/* .categ-name:focus {
+  background-color: #000;
+} */
 
 .icon-ctg {
   width: 19px;
-height: 20px;
-flex-shrink: 0;
-fill: #000;
+  height: 20px;
+  fill: #000;
 }
 
-.categ-name {  
-  
-  padding: 6px 20px;
+.categ-name {
+  display: flex;
+  align-self: center;
+  gap: 10px;
+  padding: 8px 20px;
   margin: 16px 12px;
   border-radius: 100px;
   border: 2px solid #E7E6ED;
-  min-width: 120px;
+  min-width: 132px;  
   color: #000;
   text-align: center;
   font-family: e-Ukraine, sans-serif;
-  font-size: 12px;  
+  font-size: 14px;  
   font-weight: 500;
   line-height: 18px;
 }
+.categ-name:hover {
+ 
+}
+.categ-name:active {
+  background-color: #000;
+  color: white
+}
 
+/* .categ-name>em {
+  
+}
+.categ-name>em:active { 
+  background-color: #000; 
+   color: white
+ } */
+
+ /* .categ-name>em:focus {  
+  color: white
+} */
 
 .add-coord {
   width: 340px;
   height: 48px;
-  flex-shrink: 0;
+  padding: 0 20px;
   border-radius: 5px;
   border: 2px solid #E7E6ED;
 }
 
 .descr {
+  display: block;
   width: 1200px;
   height: 192px;
-  flex-shrink: 0;
+  padding: 10px 40px;
   border-radius: 5px;
   border: 2px solid #E7E6ED;
 }
@@ -740,26 +763,29 @@ fill: #000;
   left: 16px;
   top: 14px;
 }
+.icon-categor:hover {
+  background-color: red;
+  opacity: 80%;
+}
 
 .add {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   width: 185px;
   height: 47px;
-  flex-shrink: 0;
   border-radius: 5px;
   background: #000;
-
   color: #FFF;
   text-align: center;
   font-family: e-Ukraine, sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 16px; 
   font-weight: 500;
   line-height: 140%;
+}
+.add:hover {
+  opacity: 80%;
 }
 
 /* ------------------- questions -------------------*/
@@ -821,6 +847,10 @@ padding: 20px 0;
   line-height: 18px;
   cursor: pointer;
 }
+.icon-openanswer:hover {
+  color: #cec3c3;
+  font-size: 40px;
+}
 
 /* ------------ contacts ---------------- */
 
@@ -838,7 +868,6 @@ padding: 20px 0;
   background-color: #fff;
   transform:skewY(-3deg);
   top: 60px;
-
   bottom: 100px;
   height: 560px;
   width: 100%;
@@ -854,9 +883,7 @@ padding: 20px 0;
   position: absolute;
   left: 47%;
   top: 35%;
-  color: #000;
-
-  color: #000;
+  color: #000;  
   text-align: center;
   font-family: e-Ukraine, sans-serif;
   font-size: 24px;
@@ -870,9 +897,7 @@ padding: 20px 0;
   display: flex;
   align-items: center;
   gap: 20px; 
-  
-  
-}
+  }
 
  .icon-address {
   display: block;
@@ -893,13 +918,14 @@ padding: 20px 0;
   
 .contact-item {
   color: #000;
-/* text-align: center; */
   font-family: e-Ukraine, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;  
 }
-
+.contact-item:hover {
+  color: #6B76FF;
+}
 /* ------------ footer ---------------- */
 section {
   display: flex;

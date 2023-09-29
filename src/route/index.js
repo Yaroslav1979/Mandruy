@@ -216,7 +216,7 @@ router.get('/mandruy', function (req, res) {
         },  
       },
       addCoordination: 'Введіть координати',
-      addDescription: 'Введіть короткий опис...',
+      addDescription: 'Введіть опис...',
      addButtons: {
          add: 'Надіслати',
       }, 
