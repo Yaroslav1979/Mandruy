@@ -12,29 +12,29 @@
 
                     {{#with eachCategory}}
                         <div class="filtr-category">                           
-                                    <em class="name-filtr">{{category}} </em>
-                                    <select class="input-filtr" name="" id="">
-                                        {{#each option}}
-                                            <option>                                    
-                                                {{.}}
-                                            </option>
-                                        {{/each}}                                                    
-                                    </select>                            
+                            <em class="name-filtr">{{category}} </em>
+                            <select class="input-filtr" name="" id="">
+                              {{#each option}}
+                                    <option>                                    
+                                    {{.}}
+                                    </option>
+                               {{/each}}                                                    
+                           </select>                            
                         </div>
                     {{/with}} 
 
                     {{#with eachRegion}}
                         <div class="filtr-category">
                                     
-                                    <em class="name-filtr">{{region}} </em>
-                                    <select class="input-filtr" name="" id="">
-                                        {{#each option}}
-                                            <option>                                    
-                                                {{.}}
-                                            </option>
-                                        {{/each}}                                                         
-                                    </select> 
-                               </div>
+                        <em class="name-filtr">{{region}} </em>
+                            <select class="input-filtr" name="" id="">
+                            {{#each option}}
+                                <option>                                    
+                                {{.}}
+                                </option>
+                            {{/each}}                                                         
+                            </select> 
+                        </div>
                     {{/with}} 
 
                     {{#with eachSort}}
@@ -47,9 +47,14 @@
                                     </option>
                                 {{/each}}                                                         
                             </select>
-
-                            {{/with}}
                         </div> 
+                    {{/with}}
+
+                    <div class="open">
+                        <img src="/png/icon-grid-fill.png" alt="" class="open-grid">
+                        <img src="/png/icon-agenda.png" alt="" class="open-galerry">
+                    </div>
+                       
                     {{/with}}                
                 {{!-- <button class="butn">{{buttonSearch}} </button>
                 <button class="butn">{{buttonFiltr}} </button> --}}

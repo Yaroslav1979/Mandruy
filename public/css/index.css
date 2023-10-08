@@ -401,7 +401,7 @@ text-decoration: none;
 
  .filtr {
   display: flex;
-  gap: 40px;
+  gap: 8px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -412,7 +412,7 @@ text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center; 
-   width: 33%;
+   width: 30%;
   height: 48px;
   flex-shrink: 0;
   gap: 20px;
@@ -444,8 +444,56 @@ text-decoration: none;
   font-weight: 400;
   line-height: 18px
   }
- 
+  
+.open {
+  display: flex;
+  gap: 8px;  
+}
+
+.open-gallery .open-list {
+  background: #F5F4FA;
+   display: flex;
+ width: 100px;
+height: 100px;
+
+}
+
+
+/* .form > ::-webkit-scrollbar > {
+  width: 14px; 
+} 
+*::-webkit-scrollbar-track {
+  background: orange; 
+} 
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+} */
  /* -------------------------------- */
+
+ /* .place-list {
+  overflow: hidden;
+} */
+
+/* Створення власного scrollbar */
+.place-list::-webkit-scrollbar {
+  width: 8px; 
+}
+
+/* Стилізація смуги прокручування */
+.place-list::-webkit-scrollbar-thumb {
+  background-color: #888;   
+   /* Колір смуги прокручування */
+  border-radius: 5px;            
+  /* Закруглені кути смуги */
+}
+
+/* Стилізація трека (фону) прокручування */
+.place-list::-webkit-scrollbar-track {
+  background-color: #eee8b5; 
+  /* Колір фону трека */
+}
 
 .place-list {
   display: flex;
@@ -453,7 +501,9 @@ text-decoration: none;
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1200px;    
+  width: 1200px; 
+  height: 280px; /* Встановлюємо фіксовану висоту для колонки */
+  overflow-y: auto;    
 }
 
 .place-item {
@@ -493,7 +543,7 @@ text-decoration: none;
   position: absolute;
   bottom: 0;
   left: 32px;
-  width: 30%;
+  width: 30.5%;
   flex-wrap: wrap; 
   color: #fff; 
   font-family: e-Ukraine, sans-serif;
@@ -672,14 +722,22 @@ input[type="file"] {
   justify-content: space-between;
 }
 
-/* .categ-name:focus {
-  background-color: #000;
-} */
-
-.icon-ctg {
+ 
+ .icon-ctg {
   width: 19px;
-  height: 20px;
-  fill: #000;
+  height: 20px; 
+  fill: black; 
+  /* stroke: black; */
+    /* transition: fill 0.3s;  */
+}
+
+.each-ctg:hover .icon-ctg {  
+  fill: white; 
+  stroke: white;
+}
+.categ-name:hover {
+  background-color: #000;
+  color: white;  
 }
 
 .categ-name {
@@ -697,14 +755,10 @@ input[type="file"] {
   font-size: 14px;  
   font-weight: 500;
   line-height: 18px;
+  
 }
-.categ-name:hover {
- 
-}
-.categ-name:active {
-  background-color: #000;
-  color: white
-}
+
+
 
 /* .categ-name>em {
   
