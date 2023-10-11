@@ -1,6 +1,6 @@
-<div class="form"  id="search">
+<div class="form">
     {{#with places}}
-        <h2>{{title}}</h2>
+        <h2 id="search">{{title}}</h2>
             {{#with form}}
                 <div class="form-search">
                     <input type="{{searchFild}}" class="form-input" placeholder="{{placeyolder}}" name="serch">
@@ -59,15 +59,18 @@
                 {{!-- <button class="butn">{{buttonSearch}} </button>
                 <button class="butn">{{buttonFiltr}} </button> --}}
                     {{/with}}
-            </div>    
-            <div class="place-list">
+            </div>   
+
+
+            <div class="place-block">
                 {{#each place}}
-                    <div class="place-item">
-                        <img src="{{photo}}" alt="photo" class="place-img">                   
+                    <div class="place-li">
+                        <img src="{{photo}}" alt="photo" class="place-foto">                   
                     
-                        <div class="place-text">
-                            <p class="place-descr">{{namePlace}} </p>
-                            {{!-- <button class="place-btn"> Ще фото </button> --}}
+                        <div class="place-cont">
+                            <p class="place-name">{{namePlace}} </p>            
+                            <p class="place-detal">{{descriptionPlace}} </p>
+
                         </div>
                     </div>        
                 {{/each}} 

@@ -265,23 +265,25 @@ margin-bottom: 76px;
   flex-direction: column;
   width: 16%;
   align-items: center;
-  cursor: pointer;  
+  cursor: pointer;
+  text-decoration: none;  
 }
   .about-items:hover .empty {
   border: 2px solid #6b75ff;
   opacity: 80%;
 }
 .about-items:hover .about-img {
-   padding: 10px;
+  width: 148px;
+  height: 124px;
 }
 
 .about-items:hover .about-slogan {
    /* opacity: 70%; */
-   font-size: 15px;
+   font-size: 17px;
 }
 .about-items:hover .about-descr{
   /* opacity: 70%; */
-  font-size: 11.4px;
+  font-size: 13px;
 }
 
 .about-img {
@@ -411,15 +413,14 @@ margin-bottom: 76px;
   height: 20px;
 }
 
-
-.social-iconf {
+/* .social-icons {
   display: flex;
   position: absolute;
   align-self: center;
   left: 22px;
   width: 15px;
-  height: 20px;
-}
+  height: 20px; */
+/* } */
 /* ------------------ form search --------------- */
 
 .form {
@@ -629,6 +630,59 @@ margin: 0.5px;
   height: 40px;
   margin: 10px;
 }
+
+/* ----------- Photo List---------------  */
+.place-block {
+display: flex;
+flex-direction: column;
+gap: 60px;
+
+}
+
+.place-li {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.place-photo {
+  display: flex;
+  width: 426px;
+  height: 250px;
+  /* width: 100%;  */
+}
+ 
+
+.place-name {
+  display: flex;
+  align-content: center;
+  /* justify-content: center; */
+  color: #000;
+  text-align: justify;
+  font-family: e-Ukraine,sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.place-detal {
+  display: flex;
+  align-content: center;
+  color: #000;
+  text-align: justify;
+  font-family: e-Ukraine, sans-serif;
+  font-size: 10px;
+   font-weight: 400;
+  line-height: 18px
+}
+.place-cont {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-self: center;
+  gap: 12px;
+}
+
 
 /* -------------map-------------- */
 .map {
