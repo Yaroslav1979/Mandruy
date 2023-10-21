@@ -231,25 +231,6 @@ router.get('/mandruy', function (req, res) {
       }, 
     },
 
-    // founders: [
-    //   {
-    //     personPhoto: "https://picsum.photos/300/500",
-    //     name: 'Андрій Гринчук',
-    //     about: 'Автор ідеї, веб-дизайнер та головний натхненник проекту',
-    //   },
-
-    //   {
-    //     personPhoto: "https://picsum.photos/300/500",
-    //     name: 'Ярослав Ковтонюк',
-    //     about: 'Верстка та front-end розробник сайту',
-    //   },
-
-    //   { personPhoto: "https://picsum.photos/300/500",
-    //     name: 'Ім*я Прізвище',
-    //     about: 'Опис роботи учасника проекту',
-    //   }
-    // ],
-
     questions: {
       title: 'Поширені запитання',
       details: [  
@@ -302,10 +283,8 @@ router.get('/mandruy', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
-// Підключаємо роутер до бек-енду
-module.exports = router
 
-
+// -------------------------------------------------------------
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
@@ -430,37 +409,42 @@ router.get('/mandruyList', function (req, res) {
         photo: "/img/places/Bell.jpg",
         namePlace: 'Назва місця 1',
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
-        },
+        id: '00001',
+      },
 
         {
         photo: "/img/places/Church.jpg",
         namePlace: 'Назва місця 2',
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
-        },
+        id: '00002',
+      },
 
         {
         photo: "/img/places/Museum.jpg",
         namePlace: 'Назва місця 3',
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
-        },
+        id: '00003',
+      },
 
         {
         photo: "/img/places/RockPicture.jpg",
         namePlace: 'Назва місця 4',
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
-
+        id: '00004',
         },
         {
         photo: "/img/places/Fortress.jpg",
         namePlace: 'Назва місця 5',
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
-        },
+        id: '00005',
+      },
   
         {
         photo: "/img/places/OldChurch.jpg",
         namePlace: 'Назва місця 6',
         descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
-        },
+        id: '00006',
+      },
       ],
     },
 
@@ -516,25 +500,6 @@ router.get('/mandruyList', function (req, res) {
       }, 
     },
 
-    // founders: [
-    //   {
-    //     personPhoto: "https://picsum.photos/300/500",
-    //     name: 'Андрій Гринчук',
-    //     about: 'Автор ідеї, веб-дизайнер та головний натхненник проекту',
-    //   },
-
-    //   {
-    //     personPhoto: "https://picsum.photos/300/500",
-    //     name: 'Ярослав Ковтонюк',
-    //     about: 'Верстка та front-end розробник сайту',
-    //   },
-
-    //   { personPhoto: "https://picsum.photos/300/500",
-    //     name: 'Ім*я Прізвище',
-    //     about: 'Опис роботи учасника проекту',
-    //   }
-    // ],
-
     questions: {
       title: 'Поширені запитання',
       details: [  
@@ -586,6 +551,107 @@ router.get('/mandruyList', function (req, res) {
 })
   //                  ↑↑ сюди вводимо JSON дані
 })
+
+// ----------------------------------------
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/photo', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('photo', {
+  layout: 'mandruy',
+        
+      place: [
+        {
+        photo: "/img/places/Bell.jpg",
+        namePlace: 'Назва місця 1',
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        id: '00001',
+      },
+
+        {
+        photo: "/img/places/Church.jpg",
+        namePlace: 'Назва місця 2',
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        id: '00002',
+      },
+
+        {
+        photo: "/img/places/Museum.jpg",
+        namePlace: 'Назва місця 3',
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        id: '00003',
+      },
+
+        {
+        photo: "/img/places/RockPicture.jpg",
+        namePlace: 'Назва місця 4',
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        id: '00004',
+        },
+        {
+        photo: "/img/places/Fortress.jpg",
+        namePlace: 'Назва місця 5',
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        id: '00005',
+      },
+  
+        {
+        photo: "/img/places/OldChurch.jpg",
+        namePlace: 'Назва місця 6',
+        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        id: '00006',
+      },
+      ],
+    
+    // ----------------------------------------
+
+    addPlace: {
+      // Отримайте відповідні значення для полів addPlace
+      addFiltr: {
+        camp: {
+          name: 'Табір', 
+          svgIcon: "url('/svg/camp.svg')"
+          },
+        travel: { 
+          name: 'Мандрівка', 
+          svgIcon: "url('/svg/tree.svg')"
+        },
+        water: { 
+          name:  'Питна вода', 
+          svgIcon: "url('/svg/water.svg')"
+        },
+        monument: { 
+          name: "Пам'ятка", 
+          svgIcon: "url('/svg/monument.svg')"
+        },
+        museum: { 
+          name:  'Музей', 
+          svgIcon: "url('/svg/museum.svg')"
+        },
+        
+        waterPond: { 
+          name:  'Водойма',  
+          svgIcon: "url('/svg/waterPond.svg')"
+        },
+      
+        transport: { 
+          name:  'Доступно для транспорту',
+          svgIcon: "url('/svg/car.svg')"
+        },  
+      },
+      addCoordination: 'Введіть координати',
+      addDescription: 'Введіть опис...',
+     addButtons: {
+         add: 'Надіслати',
+      }
+    }   
+  })
+}
+)
 
 // Підключаємо роутер до бек-енду
 module.exports = router
