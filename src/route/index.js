@@ -63,7 +63,7 @@ router.get('/mandruy', function (req, res) {
     // ],
     hero: {
       title: 'Вітаємо вас на «Мандруй»',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cra',
+      text: 'Наш сайт — це сервіс, призначений для пошуку відпочинкових, історичних та туристичних місць. Завдяки структурованій інформації, детальному опису, фото та координатам, будь-який турист може знайти точку неподалік від себе, аби відвідати її. Якщо ви знаєте цікаве місце, якого немає в переліку, тоді ви маєте можливість надіслати заявку на додання його в наш список.',
       buttons: {
         search: {
           text: 'Розпочати пошук',
@@ -143,38 +143,53 @@ router.get('/mandruy', function (req, res) {
 
       place: [
         {
-        photo: "/img/places/Bell.jpg",
-        namePlace: 'Назва місця 1',
-        
+        photo: "/img/places/Dubno-castle.jpg",
+        namePlace: 'Дубенський замок',        
         },
 
         {
-        photo: "/img/places/Church.jpg",
-        namePlace: 'Назва місця 2',
-        
+        photo: "/img/places/Tarakaniv-fort.jpg",
+        namePlace: 'Тараканівський форт',        
         },
 
         {
-        photo: "/img/places/Museum.jpg",
-        namePlace: 'Назва місця 3',
-        
+        photo: "/img/places/Peresopnitsa.jpg",
+        namePlace: 'Пересопниця',        
         },
 
         {
-        photo: "/img/places/RockPicture.jpg",
-        namePlace: 'Назва місця 4',
-        
+        photo: "/img/places/Loves-tunnel.jpg",
+        namePlace: 'Тунель кохання',        
         },
+
         {
-        photo: "/img/places/Fortress.jpg",
-        namePlace: 'Назва місця 5',
-        
+        photo: "/img/places/Fosfat-hill.jpg",
+        namePlace: 'Фосфатні гори',        
         },
   
         {
-        photo: "/img/places/OldChurch.jpg",
-        namePlace: 'Назва місця 6',
-        
+        photo: "/img/places/Falcon-hills.jpg",
+        namePlace: 'Соколині гори',        
+        },
+
+        {
+         photo: "/img/places/White-lake.jpg",
+         namePlace: 'Біле озеро',          
+        },
+   
+        {
+        photo: "/img/places/Basalt-pillars.jpg",
+        namePlace: 'Базальтові стовпи',          
+        },
+
+        {
+        photo: "/img/places/Sokil.jpg",
+        namePlace: 'База Сокіл',            
+        },
+      
+        {
+        photo: "/img/places/Klevan-castle.jpg",
+        namePlace: 'Клеванський замок',          
         },
       ],
     },
@@ -236,19 +251,19 @@ router.get('/mandruy', function (req, res) {
       details: [  
           {    
             question: 'Як можна додати власне місце?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: 'Ви можете зробити це у розділі "Додати місце". Для цього потрібно ввести назву, обрати категорії, які описують місце, додати координати, опис та фото. Натиснувши кнопку "Надіслати" ми отримаємо запит. Після розгляду місце буде додане у нашу базу, або ж буде відхилене.' ,
           },
           {    
             question: 'Скільки часу потрібно на обробку мого запиту?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: 'Ми не маємо можливості розглядати запити кожного дня і додавати на сайт лише по одному місцю. Проте намагатимемось робити це регулярно, оновлюючи список місць в гугл картах раз на 1-2 тижні. Оновлення бази на сайті може зайняти довше.' ,
           },
           {    
             question: 'Як віднайти потрібне мені місце?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: 'Щоб знайти потрібне вам місце ви можете скористатися розділом "Пошук місць". Сам пошук можна здійснити за введеною назвою, областю розташування або категоріями. Також ви маєте можливість відсортувати список за потрібним критерієм та обрати вигляд списку або блоків.' ,
           },
           {    
             question: 'Для кого призначений цей сайт?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: "Сайт призначений для усіх, хто любить подорожувати Україною. Серед місць, внесених до нашої бази, є історичні пам'ятки, музеї, місця для таборів, відпочинку. Тому сайт може стати в нагоді будь-кому.",
           },
       ],
     },
@@ -263,20 +278,19 @@ router.get('/mandruy', function (req, res) {
       },
     },
 
-    footer: {
-        projectLogo: 'MANDRUY.COM',
-        projectTitle: 'Mандруй',
-        projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
-        socialLinks: [
-          {
-            link: 'Cool stuff',
-            href: 'https://example.com/cool-stuff',
-          },
-          {
-            link: 'Random feature',
-            href: 'https://example.com/random-feature',
-          },
-        ],
+    footer: {                
+        projectDescription: 'Туристично-пошуковий сервіс “Мандруй” - це корисний існтрумент для любителів дослідження теренів України. Шукай цікаві місця та додавай власні, шляхом подачі заявок адміністрації сайту.',
+        protectedProject: '2023© Мандруй. Усі права захищені',
+        // socialLinks: [
+        //   {
+        //     link: 'Cool stuff',
+        //     href: 'https://example.com/cool-stuff',
+        //   },
+        //   {
+        //     link: 'Random feature',
+        //     href: 'https://example.com/random-feature',
+        //   },
+        // ],
       },
     },
 })
@@ -326,7 +340,7 @@ router.get('/mandruyList', function (req, res) {
     // ],
     hero: {
       title: 'Вітаємо вас на «Мандруй»',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cra',
+      text: 'Наш сайт — це сервіс, призначений для пошуку відпочинкових, історичних та туристичних місць. Завдяки структурованій інформації, детальному опису, фото та координатам, будь-який турист може знайти точку неподалік від себе, аби відвідати її. Якщо ви знаєте цікаве місце, якого немає в переліку, тоді ви маєте можливість надіслати заявку на додання його в наш список.',
       buttons: {
         search: {
           text: 'Розпочати пошук',
@@ -349,19 +363,19 @@ router.get('/mandruyList', function (req, res) {
       picture: '/svg/Group 14.svg',
       slogan: 'Різноманіття',
       description: 'В нашій базі можна знайти місця для таборів або недовготривалих мандрівок, визначні історичні пам’ятки, річки чи озера.',
-      id: 'search',
+      id: 'search'
     },
     {
       picture: '/svg/Group 15.svg',
       slogan: 'Сортування',
       description: 'Усі місця чи пам’ятки відсортовані за категоріями. Ви можете легко знайти те, що вам потрібно, задавши певні параметри пошуку',
-      id: 'search',
+      id: 'search'
     },
     {
       picture: '/svg/Group 16.svg',
       slogan: 'Інтерактивна мапа',
       description: 'Кожне місце також можна переглянути на Google Мапах, що додає зручності для прокладання маршрутів',
-      id: 'map',
+      id: 'map'
     }
     ]
   },
@@ -406,45 +420,72 @@ router.get('/mandruyList', function (req, res) {
 
       place: [
         {
-        photo: "/img/places/Bell.jpg",
-        namePlace: 'Назва місця 1',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+          photo: "/img/places/Dubno-castle.jpg",
+          namePlace: 'Дубенський замок. Дубно',
+        descriptionPlace: 'Замок князів Острозьких XV ст. в м. Дубні – один із найстаріших замків України, який до цього часу несе у собі риси середньовіччя (суворі мури, підземелля зі склепіннями) та парадного стилю (оздоблені ліпниною зали).',
         id: '00001',
       },
 
         {
-        photo: "/img/places/Church.jpg",
-        namePlace: 'Назва місця 2',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+          photo: "/img/places/Tarakaniv-fort.jpg",
+          namePlace: 'Тараканівський форт',
+        descriptionPlace: "Тараканівський форт - оборонна споруда, архітектурна пам'ятка XIX століття. Розташована неподалік від села Тараканів Дубенського району Рівненської області, в мальовничій місцевості над річкою Іквою.",
         id: '00002',
       },
 
         {
-        photo: "/img/places/Museum.jpg",
-        namePlace: 'Назва місця 3',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+          photo: "/img/places/Peresopnitsa.jpg",
+          namePlace: 'Пересопниця',
+        descriptionPlace: 'Культурно-археологічний центр "Пересопниця" був зведений до 450-річчя з часу створення Євангелія. Тут розміщено зокрема Музей Першокниги, музей-скансен «Княже місто», археологічний музей. У Х-ХІІІ ст. Пересопниця була удільним князівством Київської Русі та Галицько-Волинської держави.',
         id: '00003',
       },
 
         {
-        photo: "/img/places/RockPicture.jpg",
-        namePlace: 'Назва місця 4',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+          photo: "/img/places/Loves-tunnel.jpg",
+          namePlace: 'Тунель кохання',
+        descriptionPlace: 'Початок залізничного шляху, оповитого віттям дерев, відомого як Тунель Кохання, знаходиться у Клевані і веде до Оржева ідеальною прямою лінією, довжиною 4 км.',
         id: '00004',
         },
         {
-        photo: "/img/places/Fortress.jpg",
-        namePlace: 'Назва місця 5',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+          photo: "/img/places/Fosfat-hill.jpg",
+          namePlace: 'Фосфатні гори',
+        descriptionPlace: 'Білі гори, або Фосфатні гори - це фосфогіпсові терикони, які розташовані біля села Рубче Рівненської області. Являє собою хімічні відходи «Рівнеазоту». А також популярна фотолокація неподалік від м. Рівне.',
         id: '00005',
       },
   
         {
-        photo: "/img/places/OldChurch.jpg",
-        namePlace: 'Назва місця 6',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+          photo: "/img/places/Falcon-hills.jpg",
+          namePlace: 'Соколині гори',
+        descriptionPlace: 'Соколи́ні Го́ри — ландшафтний заказник місцевого значення в Україні. Розташований у Березнівському районі Рівненської області, між селами Більчаки та Губків. На території заказника ростуть 77 видів рідкісних рослин, в тому числі види, занесені до Червоного списку Європи та Червоної книги України.',
         id: '00006',
       },
+
+    //   {
+    //     photo: "/img/places/White-lake.jpg",
+    //      namePlace: 'Біле озеро',
+    //   descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+    //   id: '00007',
+    // },
+
+      {
+        photo: "/img/places/Basalt-pillars.jpg",
+        namePlace: 'Базальтові стовпи',
+      descriptionPlace: "База́льтові стовпи́ — геологічна пам'ятка природи місцевого значення в Україні. Розташована в Костопільському районі Рівненської області, біля сіл Базальтового, Берестовця, Нового Берестовця. Площа 0,8 га. Створена на базі Івано-Долинського родовища базальтів.",
+      id: '00008',
+      },
+    //   {
+    //     photo: "/img/places/Sokil.jpg",
+    //     namePlace: 'База Сокіл',
+    //   descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+    //   id: '00009',
+    // },
+
+      {
+        photo: "/img/places/Klevan-castle.jpg",
+        namePlace: 'Клеванський замок',
+      descriptionPlace: "Клеванський замок — залишки оборонної споруди зі збереженими віадуком, двома кам'яними вежами «Пунтоне» та корпусами колишнього духовного училища. Розташований у західній частині смт Клевань, що в Рівненському районі Рівненської області.",
+      id: '00010',
+    },
       ],
     },
 
@@ -505,19 +546,19 @@ router.get('/mandruyList', function (req, res) {
       details: [  
           {    
             question: 'Як можна додати власне місце?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: 'Ви можете зробити це у розділі "Додати місце". Для цього потрібно ввести назву, обрати категорії, які описують місце, додати координати, опис та фото. Натиснувши кнопку "Надіслати" ми отримаємо запит. Після розгляду місце буде додане у нашу базу, або ж буде відхилене.' ,
           },
           {    
             question: 'Скільки часу потрібно на обробку мого запиту?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: 'Ми не маємо можливості розглядати запити кожного дня і додавати на сайт лише по одному місцю. Проте намагатимемось робити це регулярно, оновлюючи список місць в гугл картах раз на 1-2 тижні. Оновлення бази на сайті може зайняти довше.' ,
           },
           {    
             question: 'Як віднайти потрібне мені місце?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: 'Щоб знайти потрібне вам місце ви можете скористатися розділом "Пошук місць". Сам пошук можна здійснити за введеною назвою, областю розташування або категоріями. Також ви маєте можливість відсортувати список за потрібним критерієм та обрати вигляд списку або блоків.' ,
           },
           {    
             question: 'Для кого призначений цей сайт?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
+            answer: "Сайт призначений для усіх, хто любить подорожувати Україною. Серед місць, внесених до нашої бази, є історичні пам'ятки, музеї, місця для таборів, відпочинку. Тому сайт може стати в нагоді будь-кому.",
           },
       ],
     },
@@ -533,19 +574,18 @@ router.get('/mandruyList', function (req, res) {
     },
 
     footer: {
-        projectLogo: 'MANDRUY.COM',
-        projectTitle: 'Mандруй',
-        projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi. Morbi non arcu risus quis varius quam quisque id. Quam quisque id diam vel quam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Aliquam nulla facilisi cras',
-        socialLinks: [
-          {
-            link: 'Cool stuff',
-            href: 'https://example.com/cool-stuff',
-          },
-          {
-            link: 'Random feature',
-            href: 'https://example.com/random-feature',
-          },
-        ],
+      projectDescription: 'Туристично-пошуковий сервіс “Мандруй” - це корисний існтрумент для любителів дослідження теренів України. Шукай цікаві місця та додавай власні, шляхом подачі заявок адміністрації сайту.',
+      protectedProject: '2023© Мандруй. Усі права захищені',
+        // socialLinks: [
+        //   {
+        //     link: 'Cool stuff',
+        //     href: 'https://example.com/cool-stuff',
+        //   },
+        //   {
+        //     link: 'Random feature',
+        //     href: 'https://example.com/random-feature',
+        //   },
+        // ],
       },
     },
 })

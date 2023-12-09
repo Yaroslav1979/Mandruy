@@ -51,7 +51,7 @@ section {
   flex-direction: column;
   align-content: center;
   gap: 324px;
-  background: url(/img/synevir.png);
+  background: url(/img/synevir.jpg);
   width: 100%;
   height: 1080px;
 }
@@ -592,12 +592,20 @@ margin: 0.5px;
 .place-item:nth-child(odd)>img { 
   border-radius: 50px 0px 0px 0px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat; 
+  cursor: pointer;
 }
 
   .place-item:nth-child(even)>img {   
     border-radius: 0px 0px 50px 0px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-}
+    cursor: pointer;
+  }
+
+.place-item:nth-child(even)>img:hover, .place-item:nth-child(odd)>img:hover {
+  display: flex;    
+  padding: 0;
+  border: 2px solid #bd6412;
+  }
 
 .place-text {
   display: flex;
@@ -611,14 +619,14 @@ margin: 0.5px;
   position: absolute;
   bottom: 0;
   left: 32px;
-  width: 30.5%;
   flex-wrap: wrap; 
   color: #fff; 
   font-family: e-Ukraine, sans-serif;
   font-size: 18px;
+  text-transform: initial;
   font-weight: 600;
   line-height: 18px;
-  padding: 8px;  
+  padding: 12px;  
   background-color: #000;
  transform: skewX(-6deg);
 }
