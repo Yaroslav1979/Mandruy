@@ -991,8 +991,9 @@ text-transform: uppercase;
 padding: 20px 0;
 }
 
-.quastion-text-block {
+.question-block {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-content: center;
    width: 1096px;
@@ -1003,13 +1004,19 @@ padding: 20px 0;
  
 }
 
-.quastion-text {
+.question {
+  display: flex;
+  justify-content: space-between;
   color: #FFF;
   font-family: e-Ukraine, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-/* line-height: 18px; */
+  line-height: 18px;
+  
+}
+.answer {
+padding-bottom: 20px;
 }
 
 .icon-openanswer {
