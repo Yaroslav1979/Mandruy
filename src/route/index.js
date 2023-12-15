@@ -588,16 +588,7 @@ router.get('/mandruyList', function (req, res) {
     footer: {
       projectDescription: 'Туристично-пошуковий сервіс “Мандруй” - це корисний існтрумент для любителів дослідження теренів України. Шукай цікаві місця та додавай власні, шляхом подачі заявок адміністрації сайту.',
       protectedProject: '2023© Мандруй. Усі права захищені',
-        // socialLinks: [
-        //   {
-        //     link: 'Cool stuff',
-        //     href: 'https://example.com/cool-stuff',
-        //   },
-        //   {
-        //     link: 'Random feature',
-        //     href: 'https://example.com/random-feature',
-        //   },
-        // ],
+        
       },
     },
 })
@@ -618,45 +609,102 @@ router.get('/photo', function (req, res) {
         
       place: [
         {
-        photo: "/img/places/Bell.jpg",
-        namePlace: 'Назва місця 1',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        photo: "/Photo_card/Dubno.jpg",
+        namePlace: 'Дубенський замок',
+        descriptionPlace: 'Замок князів Острозьких XV ст. в м. Дубні – один із найстаріших замків України, який до цього часу несе у собі риси середньовіччя (суворі мури, підземелля зі склепіннями) та парадного стилю (оздоблені ліпниною зали).',
         id: '00001',
+        coordinate: "50.420070316898496, 25.7478747",
+
       },
 
         {
-        photo: "/img/places/Church.jpg",
-        namePlace: 'Назва місця 2',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        photo: "/Photo_card/Tarakaniv.jpg",
+        namePlace: 'Тараканівський форт',
+        descriptionPlace: "Тараканівський форт — оборонна споруда, архітектурна пам'ятка XIX століття. Розташована неподалік від села Тараканів Дубенського району Рівненської області, в мальовничій місцевості над річкою Іквою.",
         id: '00002',
+        coordinates: "50.3635404942196, 25.716332530685534",
+
       },
 
         {
-        photo: "/img/places/Museum.jpg",
-        namePlace: 'Назва місця 3',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        photo: "/Photo_card/Peresopnitsa.jpg",
+        namePlace: 'Пересопниця',
+        descriptionPlace: 'Культурно-археологічний центр "Пересопниця" був зведений до 450-річчя з часу створення Євангелія. Тут розміщено зокрема Музей Першокниги, музей-скансен «Княже місто», археологічний музей. У Х-ХІІІ ст. Пересопниця була удільним князівством Київської Русі та Галицько-Волинської держави.',
         id: '00003',
+        coordinates: "50.66669717782318, 25.968933139464674",
       },
 
         {
-        photo: "/img/places/RockPicture.jpg",
-        namePlace: 'Назва місця 4',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        photo: "/Photo_card/Love path.jpg",
+        namePlace: 'Тунель кохання',
+        descriptionPlace: 'Початок залізничного шляху, оповитого віттям дерев, відомого як Тунель Кохання, знаходиться у Клевані і веде до Оржева ідеальною прямою лінією, довжиною 4 км.',
         id: '00004',
+        coordinates: "50.75114637382255, 26.04371220794339",
         },
         {
-        photo: "/img/places/Fortress.jpg",
-        namePlace: 'Назва місця 5',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        photo: "/Photo_card/Fosfat hills.jpg",
+        namePlace: 'Фосфатні гори',
+        descriptionPlace: 'Білі гори, або Фосфатні гори - це фосфогіпсові терикони, які розташовані біля села Рубче Рівненської області. Являє собою хімічні відходи «Рівнеазоту». А також популярна фотолокація неподалік від м. Рівне.',
         id: '00005',
+        coordinates: "50.743460, 26.185805",
       },
   
         {
-        photo: "/img/places/OldChurch.jpg",
-        namePlace: 'Назва місця 6',
-        descriptionPlace: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Arcu felis bibendum ut tristique et egestas quis. Euismod lacinia at quis risus sed vulputate odio ut enim. Porttitor massa id neque aliquam vestibulum morbi.',
+        photo: "/Photo_card/Falcon hills.jpg",
+        namePlace: 'Соколині гори',
+        descriptionPlace: 'Соколи́ні Го́ри — ландшафтний заказник місцевого значення в Україні. Розташований у Березнівському районі Рівненської області, між селами Більчаки та Губків. На території заказника ростуть 77 видів рідкісних рослин, в тому числі види, занесені до Червоного списку Європи та Червоної книги України.',
         id: '00006',
+        coordinates: "50.822320164105, 27.067121515342777",
       },
+
+      {
+        photo: "/Photo_card/Bazalt pillons.jpg",
+        namePlace: 'Базальтові стовпи',
+        descriptionPlace: "База́льтові стовпи — геологічна пам'ятка природи місцевого значення в Україні. Розташована в Костопільському районі Рівненської області, біля сіл Базальтового, Берестовця, Нового Берестовця. Площа 0,8 га. Створена на базі Івано-Долинського родовища базальтів.",
+        id: '00007',
+        coordinates: "50.92317532080344, 26.23441203068554",
+      },
+
+      {
+        photo: "/Photo_card/Klevan castle.jpg",
+        namePlace: 'Клеванський замок',
+        descriptionPlace: "Клеванський замок — залишки оборонної споруди зі збереженими віадуком, двома кам'яними вежами «Пунтоне» та корпусами колишнього духовного училища. Розташований у західній частині смт Клевань, що в Рівненському районі Рівненської області.",
+        id: '00008',
+        coordinates: "50.74311854529095, 25.966342138628924",
+      },
+
+      {
+        photo: "/Photo_card/Cossak graves.jpg",
+        namePlace: 'Козацькі могили',
+        descriptionPlace: "Національний історико-меморіальний заповідник «Поле Берестецької битви», відомий також як «Козацькі Могили» — комплекс пам'яток в селі Пляшева Дубенського району Рівненської області, місце вшанування пам'яті тисяч козаків і селян, що брали участь у Берестецькій битві 1651 року під час національно-визвольної війни під проводом Богдана Хмельницького.",
+        id: '00009',
+        coordinates: "50.350148344665875, 25.194380384657233",
+      },
+
+      {
+        photo: "/Photo_card/White lake.jpg",
+        namePlace: 'Біле озеро',
+        descriptionPlace: 'Біле озеро - єдине в Україні з підвищеним вмістом гліцерину у воді, через що має надзвичайні цілющі властивості. Розташоване у Володимирецькому районі поблизу села Більська Воля, на території “Білоозерського” відділення Рівненського природного заповідника. Має площу 4,53 квадратних кілометри. Це друге за величиною озеро в Рівненській області після озера Нобель.',
+        id: '00010',
+        coordinates: "51.484759520507694, 25.753656543688635",
+      },
+
+      {
+        photo: "/Photo_card/Base Sokil.jpg",
+        namePlace: 'Мисливсько-спортивний комплекс Сокіл',
+        descriptionPlace: 'Мисливсько-спортивний комплекс «Сокіл» на Рівненщині - це територія з розвагами на природі для всієї родини. Комплекс має 8 тис. га мисливських угідь, зариблені ставки та розвинену рекреаційну зону для відпочинку.',
+        id: '00011',
+        coordinates: "50.78343577105217, 26.135323122742154",
+      },
+
+      {
+        photo: "/Photo_card/Gubkiv castle.jpg",
+        namePlace: 'Губківський замок',
+        descriptionPlace: 'На правому березі річки Случ вже триста років височіють руїни замку. Перша твердиня була зведена ще у XV столітті. А найбільш укріпленим замком Волині він став при своїх власниках - родині боярського і з часом шляхетського роду - Семашко.',
+        id: '00012',
+        coordinates: "50.78343577105217, 26.135323122742154",
+      },
+
       ],
     
     // ----------------------------------------
