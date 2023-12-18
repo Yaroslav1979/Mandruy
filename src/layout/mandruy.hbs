@@ -21,18 +21,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-       $(function () {
-    $('.toggle-answer').on('click', function () {
-        const questionBlock = $(this).closest('.question-block');
-        const answerElement = questionBlock.find('.answer');
-
-        answerElement.slideToggle();
-    });
-});
-    </script>
-  </head>
-
+  
+   
+</head>
   <body> {{>nav}}
        
 
@@ -43,6 +34,27 @@
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="src.main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script>
+       $(function () {
+    $('.toggle-answer').on('click', function () {
+        const questionBlock = $(this).closest('.question-block');
+        const answerElement = questionBlock.find('.answer');
+
+        answerElement.slideToggle();
+    });
+});
+    </script>
+
+    <script>
+  $(document).ready(function() {
+    // Додаємо обробник події для кліку на елементі з класом 'photo'
+    $('.photo').on('click', function() {
+      // Знаходимо модальне вікно за його id і викликаємо метод 'modal' для відображення
+      $('#photoModal').modal('show');
+    });
+  });
+</script>
+  
   </body>
 </html>
